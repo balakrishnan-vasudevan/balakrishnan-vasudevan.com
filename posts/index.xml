@@ -9,16 +9,6 @@
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Thu, 02 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bala-krishnan.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Books I want to finish reading</title>
-      <link>https://bala-krishnan.com/2021/12/books-i-want-to-finish-reading/</link>
-      <pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://bala-krishnan.com/2021/12/books-i-want-to-finish-reading/</guid>
-      <description>These are the books that I have in either paper form or on Kindle or PDF that I have been meaning to read, but did not go through with. My plan is to complete them before the end of 2022.
- System Desgin Interview by Alex Xu Designing Data Intensive Applications by Martin Kleppmann Networking and Kubernetes by James Strong and Vallery Lancey  </description>
-    </item>
-    
-    <item>
       <title>How I Learned to Stop Procrastinating, &amp; Love Letting Go</title>
       <link>https://bala-krishnan.com/2021/12/how-i-learned-to-stop-procrastinating-love-letting-go/</link>
       <pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate>
@@ -27,6 +17,16 @@
       <description>The end of procrastination is the art of letting go.
 I’ve been a lifelong procrastinator, at least until recent years. I would put things off until deadline, because I knew I could come through. I came through on tests after cramming last minute, I turned articles in at the deadline after waiting until the last hour, I got things done.
 Until I didn’t. It turns out procrastinating caused me to miss deadlines, over and over.</description>
+    </item>
+    
+    <item>
+      <title>The ever growing to-do list</title>
+      <link>https://bala-krishnan.com/2021/12/the-ever-growing-to-do-list/</link>
+      <pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bala-krishnan.com/2021/12/the-ever-growing-to-do-list/</guid>
+      <description>I set goals for how I want to grow my technical skills every year that I have been employed and fall short. 2021 was a similar year too. I set goals and fell short, by more than a mile.
+So, what did I plan to learn this year? I wanted to get better with my Kubernetes knowledge and clear the CKA certification. How did I fare? I did learn a lot about Kubernetes as part of my job and my oncall duties, but I was not able to take the certification and had to cancel the registration for the exam.</description>
     </item>
     
   </channel>
