@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sre on Balakrishnan Vasudevan</title>
+    <link>https://bala-krishnan.com/tags/sre/</link>
+    <description>Recent content in sre on Balakrishnan Vasudevan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bala-krishnan.com/tags/sre/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2 days before a Google interview</title>
+      <link>https://bala-krishnan.com/2022/06/2-days-before-a-google-interview/</link>
+      <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bala-krishnan.com/2022/06/2-days-before-a-google-interview/</guid>
+      <description>I am interviewing for the Systems SRE role with Google (Alphabet) in about 2 days. The SRE team at Google is something that I have looked up to ever since I read the first SRE book. I have tried interviewing for the role twice previously and I wasn&amp;rsquo;t able to go past the phone screen both the times. Hoping that the third time will be the charm!
+Google pioneered the concept of Site Reliability Engineering, which is an amalgamation of systems engineering, coding and scripting, and networking functions.</description>
+    </item>
+    
+  </channel>
+</rss>
