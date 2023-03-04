@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bala-krishnan.com/tags/google-sre-interview/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bala-krishnan.com/tags/google-sre-interview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google onsite interview - Systems SRE role</title>
+      <link>https://bala-krishnan.com/2023/03/google-onsite-interview-systems-sre-role/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://bala-krishnan.com/2023/03/google-onsite-interview-systems-sre-role/</guid>
+      <description>I did a virtual onsite interview with Google for the Systems SRE role in 2022. This post is about my preparation for the interview and my actual interview experience. In my previous post, I discussed the phone screen I had for the SRE role. After the phone screen, my recruiter got in touch with me, discussed the results of the interview and handed me over to another recruiter who handled these onsite interviews.</description>
+    </item>
+    
     <item>
       <title>Google tech screen - Systems SRE role</title>
       <link>https://bala-krishnan.com/2022/06/google-tech-screen-systems-sre-role/</link>

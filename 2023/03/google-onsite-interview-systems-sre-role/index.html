@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Google onsite interview - Systems SRE role - Balakrishnan Vasudevan</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Google onsite interview - Systems SRE role">
+<meta itemprop="description" content="Google SRE virtual onsite interview"><meta itemprop="datePublished" content="2023-03-03T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-03-03T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1127">
+<meta itemprop="keywords" content="interviews,google sre interview,google sre systems engineering,sre,google sre," /><meta property="og:title" content="Google onsite interview - Systems SRE role" />
+<meta property="og:description" content="Google SRE virtual onsite interview" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bala-krishnan.com/2023/03/google-onsite-interview-systems-sre-role/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-03-03T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Google onsite interview - Systems SRE role"/>
+<meta name="twitter:description" content="Google SRE virtual onsite interview"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://bala-krishnan.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bala-krishnan.com/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://bala-krishnan.com/css/dark.css" />
+
+	<script src="https://bala-krishnan.com/js/feather.min.js"></script>
+	
+		<script src="https://bala-krishnan.com/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://bala-krishnan.com/">Balakrishnan Vasudevan</a></h1>
+	<div class="site-description"><p>Hi! I&rsquo;m Bala. This is my blog, I write on topics related to systems and site reliability. I work on <a href="https://www.linkedin.com/in/balakrishnanvasudevan/">Site Reliability </a> for a PaaS team at Salesforce. Previously, I held similar roles at Shape Security (acquired by F5 Networks) and Appfolio</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/balakrishnan-vasudevan" title="Github"><i data-feather="github"></i></a></li><li><a href="https://twitter.com/Balki90" title="Twitter"><i data-feather="twitter"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">03</span>
+							<span class="rest">Mar 2023</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Google onsite interview - Systems SRE role</h1>
+				</div>
+			</div>
+			<meta
+			     name="description"
+			     content=""
+			   />
+			
+			
+			<aside class="toc">
+				<header>
+				<h2>Contents</h2>
+				</header>
+				<nav id="TableOfContents"></nav>
+			</aside>
+			
+					
+			<div class="markdown">
+				<p>I did a virtual onsite interview with Google for the Systems SRE role in 2022. This post is about my preparation for the interview and my actual interview experience.
+In my previous post, I discussed the phone screen I had for the SRE role. After the phone screen, my recruiter got in touch with me, discussed the results of the interview and handed me over to another recruiter who handled these onsite interviews. I had a call with this new recruiter and we discussed the timeline and the topics I needed to prepare for.
+Compared to the software engineer roles at Google, there aren&rsquo;t a lot of resources available online to help with preparation for the Google systems SRE role. I found these posts to be really useful:</p>
+<ol>
+<li><a href="https://danrl.com/srm/">Dan Luedtke&rsquo;s blogpost on interviewing for the SRE manager role</a></li>
+<li><a href="https://fabrizio2210.medium.com/how-i-get-a-job-at-google-as-sre-83d44aef7859">Fabrizio Waldner&rsquo;s post</a></li>
+<li><a href="https://medium.com/@oguzy/yet-another-blog-post-after-google-on-site-interview-b7d351aad844">Oğuz Yarımtepe&rsquo;s post</a></li>
+</ol>
+<p>The Systems SRE interviews have the following components:
+Practical Coding and Scripting:
+I prefer coding in Python and I communicated this to the recruiter. For the systems SRE role, you do not have to worry about learning complex algorithms or data structures like trees and graphs. They expect you to write code with a clear picture on the resource utilization. I read up on Python&rsquo;s memory management principles and practiced some easy and medium coding questions in Leetcode.</p>
+<p>The <a href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions">Blind 75</a> list is a big help. I would also recommend practicing coding to recreate common systems functions like file traversal or log processing or file parsing. Again, writing memory efficient code is key. If you are asked to parse a log file, do not load your entire file to memory. Use techniques like sliding window to optimize reading sections of the file.</p>
+<p>During my interview, I was asked to write a system function using Python. I used the file object as an iterator to avoid loading the entire file into memory, but the interviewer felt that I could use the sliding window technique to read as much of the contents of the file that I wanted.</p>
+<p>Non-abstract large scale systems design:
+This one is unique to the Google SRE role! Most SRE interviews with other companies ask you to design a system, you talk about the design scope, you give a high-level design and you do a deep dive of the design and the components, including performing a few back-of-the-envelope calculations, for example to estimate the amount of storage required for a service.
+With the Google SRE NALSD interview, you go deep! You design a system that is scalable and you are expected to provde a detailed estimate of the amount of storage and traffic you expect your web service to experience. You also talk about the number of servers that you need to meet those storage and traffic demands. Dan Luedtke perfectly summarizes this when he mentions that you have to come up with a Bill of Materials (BOM) for the design that you are proposing.
+For preparation, I used the following for basics:</p>
+<ol>
+<li>[System Design Primer] (<a href="https://github.com/donnemartin/system-design-primer">https://github.com/donnemartin/system-design-primer</a>)</li>
+<li><a href="https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF">System Design Interview – An insider&rsquo;s guide</a> by Alex Xu
+There are also multiple YouTube videos dedicated to the basic components of a modern production system, scalability, and reliability.
+In addition to these resources and specifically for the Google NALSD interview, I recommend the following resources:</li>
+<li><a href="https://sre.google/classroom/">SRE Classroom</a> - Go through both the exercises and the video lessons.</li>
+<li>The slides for the presentation on the <a href="https://docs.google.com/presentation/d/1jW2S9yYZf5DYmri0KlOu1DFSZMTeOswl6ce5V9xMIOQ/edit?resourcekey=0-hzg8gPkGgiOc6HbBqalmWg#slide=id.p">Distributed Image Server</a> in the SRE classroom. I found this presentation to be very useful in that it showed me a sample of the BOM calculations.</li>
+<li>Reading lists like <a href="https://github.com/dastergon/awesome-sre#reliability">this</a></li>
+</ol>
+<p>I felt like I did a good job with the estimations for storage, traffic, and amount of servers, but I made some mistakes with my system design by adding a single point of failure.
+As with any other skill, practice is the key to acing this interview. Take your time, understand the basics, learn to make quick bakc-of-the-envelope estimations, and make sure to think about all of the failure modes of the system you are designing.</p>
+<p>Linux internals:
+I learnt the hard lesson that how much ever experience I was able to accumulate during my career with troubleshooting Linux systems, there was still a considerable amount of concepts related to the Linux kernel that I had no clue about. Robert Love (who also works for Google) wrote the book &ldquo;Linux Kernel Development&rdquo; which helps a lot with preparation for this interview. I also recommend Michael Kerrisk&rsquo;s &ldquo;The Linux
+Programming Interface&rdquo; book to brush up on the concepts.
+The basics of a Linux system are how processes are handled, how memory is allocated, how file I/O works, how the system maintains time, how signals work, how pipes work, how sockets work. Dive deep into each of these areas and learn how the kernel handles them to help with this interview.</p>
+<p>Linux Troubleshooting:
+The meat and potatoes of any SRE&rsquo;s work!
+My mentor at my previous job recommended Brendan Gregg&rsquo;s <a href="https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55">Linux Performance Analysis in 60,000 Milliseconds</a> when I first joined the team. I haven&rsquo;t found a better resource on the steps to follow to troubleshoot a system online.
+However, like all other skills, you get better at troubleshooting by practice. With experience and with a few production issues, you learn the finer concepts of troubleshooting. You learn not to <a href="https://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html">shave the yak</a> and not get distracted into various tangents and not go on a wild goose chase based on metrics that are not relevant to the issue.
+I made the  mistake of not bothering to check the application logs for my question which could have pointed out an error that was causing the issue. I realized it towards the end after exhausting a whole range of other scenarios.</p>
+<p>Behavioral Interview:
+For this itnerview, I used a bunch of YouTube videos to gather a list of possible questions. I then listed down all of the projects I had worked on in my professional experience and used them as examples to answer each of the questions based on the STAR method.
+For the list of questions, <a href="https://dev.to/molly/interview-prep-questions-5dha">this</a> is one of the resources I used.</p>
+<p>I have been in awe of the SRE team at Google ever since I read the Google SRE book. This was my third attempt at interviewing with Google and the first time I made it to the onsite rounds. The experience was great, the recruiters and schedulers are very friendly and the interviewers are very professional and proud of their work. The phase of life related to preparation and the interviews were a good learning experience. I hope to get another shot at the interview and this time, I hope to prepare better, learn from the mistakes I made in the past, and clear the interviews the next time.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li class="tag-li"><a href="/tags/interviews">interviews</a></li>
+							
+							<li class="tag-li"><a href="/tags/google-sre-interview">google sre interview</a></li>
+							
+							<li class="tag-li"><a href="/tags/google-sre-systems-engineering">google sre systems engineering</a></li>
+							
+							<li class="tag-li"><a href="/tags/sre">sre</a></li>
+							
+							<li class="tag-li"><a href="/tags/google-sre">google sre</a></li>
+							
+						</ul>
+					
+				
+			</div>
+
+			
+			
+			<div class="back">
+				<a href="https://bala-krishnan.com/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2023  © Copyright notice </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>
