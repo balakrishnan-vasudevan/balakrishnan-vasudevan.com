@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bala-krishnan.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bala-krishnan.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>interviews</title>
+      <link>https://bala-krishnan.com/tags/interviews/</link>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://bala-krishnan.com/tags/interviews/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sre</title>
+      <link>https://bala-krishnan.com/tags/sre/</link>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://bala-krishnan.com/tags/sre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sre interview</title>
+      <link>https://bala-krishnan.com/tags/sre-interview/</link>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://bala-krishnan.com/tags/sre-interview/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>google sre</title>
       <link>https://bala-krishnan.com/tags/google-sre/</link>
@@ -32,24 +59,6 @@
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://bala-krishnan.com/tags/google-sre-systems-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>interviews</title>
-      <link>https://bala-krishnan.com/tags/interviews/</link>
-      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://bala-krishnan.com/tags/interviews/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sre</title>
-      <link>https://bala-krishnan.com/tags/sre/</link>
-      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://bala-krishnan.com/tags/sre/</guid>
       <description></description>
     </item>
     

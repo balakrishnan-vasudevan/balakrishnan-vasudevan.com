@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>The SRE Interview Experience - Balakrishnan Vasudevan</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="The SRE Interview Experience">
+<meta itemprop="description" content="Experience interviewing for the SRE role in this job market"><meta itemprop="datePublished" content="2024-01-13T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-01-13T00:00:00+00:00" />
+<meta itemprop="wordCount" content="821">
+<meta itemprop="keywords" content="interviews,sre interview,sre," /><meta property="og:title" content="The SRE Interview Experience" />
+<meta property="og:description" content="Experience interviewing for the SRE role in this job market" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bala-krishnan.com/2024/01/the-sre-interview-experience/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-13T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The SRE Interview Experience"/>
+<meta name="twitter:description" content="Experience interviewing for the SRE role in this job market"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://bala-krishnan.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bala-krishnan.com/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://bala-krishnan.com/css/dark.css" />
+
+	<script src="https://bala-krishnan.com/js/feather.min.js"></script>
+	
+		<script src="https://bala-krishnan.com/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://bala-krishnan.com/">Balakrishnan Vasudevan</a></h1>
+	<div class="site-description"><p>Hi! I&rsquo;m Bala. This is my blog, I write on topics related to systems and site reliability. I work on <a href="https://www.linkedin.com/in/balakrishnanvasudevan/">Site Reliability </a> for Rad AI. Previously, I held similar roles at Salesforce, Shape Security (acquired by F5 Networks) and Appfolio</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/balakrishnan-vasudevan" title="Github"><i data-feather="github"></i></a></li><li><a href="https://twitter.com/Balki90" title="Twitter"><i data-feather="twitter"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">13</span>
+							<span class="rest">Jan 2024</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">The SRE Interview Experience</h1>
+				</div>
+			</div>
+			<meta
+			     name="description"
+			     content=""
+			   />
+			
+					
+			<div class="markdown">
+				<p>I resigned from my role at Salesforce in September of 2023 and have been interviewing with multiple companies for SRE/DevOps/Platform Engineering roles. I was offered an SRE role with Rad AI and I have accepted it and will be joining them in the last week of January. I am glad that I was finally able to get an offer and I am excited to be exploring site reliability for a medical AI product.</p>
+<p>This post is my observation of the interview process for the SRE/DevOps/Platform Engineering roles at the various companies that I interviewed with. I applied to more than 400 open roles, but most of them did not respond, I got interviews with about 25 companies.
+All of the interviews are usually preceded by a call with the recruiter and in some cases, a call with the hiring manager. There is a very good chance of being rejected if the hiring manager feels that you are not a good fit for the role. The interviews can be classified into the following categories,</p>
+<h2 id="project-based">Project-based</h2>
+<p>Some companies share a project that they ask you to work on. I noticed this to be the case with startups. I was given an app and asked to deploy it to AWS (mostly). I used Kubernetes and Docker to containerize the app, add the relevant features, use Terraform to spin up the requisite AWS resources and deploy the app on AWS. I make sure to include copious notes and documentation on what I did when I am done.
+Once the team has evaluated the solution, the rest of the process will include interviews covering coding and scripting, systems design, behavioral interviews, and a discussion on the solution that I presented to the team.
+I love taking interviews like this. The take-home exercise helps the company understand how you work, what technologies you use, and the reasoning behind them. Take-home tests also do not have a short 1-hour window in which you have to rush to finish multiple tasks. The take-home tests I did recently, all have anywhere from 3 hours to 3 days to complete the tasks once it has been started.</p>
+<h2 id="traditional">Traditional</h2>
+<p>These are the companies that follow the traditional pattern - a coding screen with an engineer or a take-home coding test, followed by an onsite interview loop. The coding screen mostly involves Leetcode problems or scripting questions. Interviews like this one require the candidate to grind Leetcode or brush up on their knowledge of programming knowledge for scripting.
+Some companies also have a coding interview as part of the onsite loop.
+My problem with interviews like this has been the Leetcode part, I struggle with trees and graphs and their implementation.</p>
+<h2 id="memorize-and-answer">Memorize and answer</h2>
+<p>I had this experience with 2 companies, one of them being FAANG. The interviewers start asking questions related to the technologies in use. Questions like &ldquo;What is a stateful set?&rdquo;, &ldquo;What are the various kinds of DNS records?&rdquo;, &ldquo;What is QoS for pods in Kubernetes?&rdquo;. The worst was when two interviewers asked me to list all the modules I used in the most recent automation project I worked on while at Salesforce. I hate interviews like this. I consider myself to be good at using commands to identify issues with a Linux server, but I might not remember these commands off the top of my head. I am glad that I was not able to clear interviews with both of these companies.</p>
+<p>Your resume determines if you even get a call back from your recruiter. Make sure that you quantify your work and the amount that it benefited your company. I used <a href="https://resumatic.rezi.ai/">Resumatic</a> to help edit my resume. Also, if possible, I recommend tailoring the resume to the job description. I know that doing this is hard, especially when you are applying to hundreds of roles every day, but I recently came across this (blog post)[https://justingarrison.com/blog/2023-10-20-how-i-track-my-resume-with-git/] by (Justin Garrison)[https://justingarrison.com/] that describes a way to do it.
+Preparation is key in all of these interviews. I created a spreadsheet with a list of incidents that I worked on. This helped me with having stories in the &ldquo;STAR&rdquo; format (Situation, Task, Action, Result) as answers to questions in the &ldquo;Tell me about a time when&hellip;&rdquo; format.</p>
+<p>For systems design, I used the <a href="https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers?utm_campaign=system_design">Grokking Modern System Design Interview for Engineers &amp; Managers</a> course from Educative.</p>
+<p>I also brushed up my knowledge of Linux systems, Kubernetes, and AWS services.</p>
+<p>For the coding part of the interviews, I searched for company-specific questions on Leetcode.</p>
+<p>Overall, the process of finding a new role in the current market is stressful. I interviewed with companies where I was confident that I did very well in the interviews, only to be rejected and told that I did not have sufficient experience with Kubernetes ( I have been managing more than 500 EKS clusters for the past 3 years). However, the feeling of finally getting an offer is incredible!</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li class="tag-li"><a href="/tags/interviews">interviews</a></li>
+							
+							<li class="tag-li"><a href="/tags/sre-interview">sre interview</a></li>
+							
+							<li class="tag-li"><a href="/tags/sre">sre</a></li>
+							
+						</ul>
+					
+				
+			</div>
+
+			
+			
+			<div class="back">
+				<a href="https://bala-krishnan.com/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2024  © Copyright notice </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>
