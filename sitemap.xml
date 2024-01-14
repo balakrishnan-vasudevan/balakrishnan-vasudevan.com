@@ -2,14 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.example.com/authors/</loc>
+    <loc>http://www.bala-krishnan.com/about/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/</loc>
+    <loc>http://www.bala-krishnan.com/authors/bala/</loc>
+    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/categories/</loc>
+    <loc>http://www.bala-krishnan.com/</loc>
+    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/series/</loc>
+    <loc>http://www.bala-krishnan.com/tags/interviews/</loc>
+    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/tags/</loc>
+    <loc>http://www.bala-krishnan.com/posts/</loc>
+    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/sre/</loc>
+    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/sre-interview/</loc>
+    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/</loc>
+    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/post9/</loc>
+    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/post8/</loc>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/google-sre/</loc>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/google-sre-interview/</loc>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/google-sre-systems-engineering/</loc>
+    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/authors/</loc>
+    <lastmod>2023-01-05T01:15:29+01:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/shortcodes/</loc>
+    <lastmod>2023-01-04T11:51:36+01:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/post7/</loc>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/post6/</loc>
+    <lastmod>2022-06-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/2021/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/review/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/post3/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/books/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/post2/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/categories/</loc>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/contact/</loc>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/projects/</loc>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/series/</loc>
   </url>
 </urlset>

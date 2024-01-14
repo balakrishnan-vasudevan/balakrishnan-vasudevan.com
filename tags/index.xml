@@ -2,9 +2,100 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Bala</title>
-    <link>http://www.example.com/tags/</link>
+    <link>http://www.bala-krishnan.com/tags/</link>
     <description>Recent content in Tags on Bala</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://www.example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 13 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>interviews</title>
+      <link>http://www.bala-krishnan.com/tags/interviews/</link>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/interviews/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sre</title>
+      <link>http://www.bala-krishnan.com/tags/sre/</link>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/sre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sre interview</title>
+      <link>http://www.bala-krishnan.com/tags/sre-interview/</link>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/sre-interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google sre</title>
+      <link>http://www.bala-krishnan.com/tags/google-sre/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/google-sre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google sre interview</title>
+      <link>http://www.bala-krishnan.com/tags/google-sre-interview/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/google-sre-interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google sre systems engineering</title>
+      <link>http://www.bala-krishnan.com/tags/google-sre-systems-engineering/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/google-sre-systems-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Códigos curtos</title>
+      <link>http://www.bala-krishnan.com/tags/shortcodes/</link>
+      <pubDate>Wed, 04 Jan 2023 11:51:36 +0100</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2021</title>
+      <link>http://www.bala-krishnan.com/tags/2021/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>http://www.bala-krishnan.com/tags/review/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>http://www.bala-krishnan.com/tags/books/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/books/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
