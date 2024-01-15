@@ -19,10 +19,10 @@ I live in Colorado with my wife and our goldendoodle Maui. I love to cook, exper
     
     <item>
       <title>Historical coincidences</title>
-      <link>http://www.bala-krishnan.com/posts/post10/</link>
+      <link>http://www.bala-krishnan.com/posts/historical-coincidence/</link>
       <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/post10/</guid>
+      <guid>http://www.bala-krishnan.com/posts/historical-coincidence/</guid>
       <description>Two cities that I have lived and loved the most have been Chennai in India and Santa Barbara in the US. I was born in Chennai and brought up in its suburbs, Chennai was where I had my first job. Santa Barbara was the city I moved to from Chennai.
 Image: Chennai Central Railway Station Image Courtesy: Jamal Haider
 Image: Marina Beach, Chennai - the second longest beach in the world Image Courtesy: Wikipedia</description>
@@ -30,19 +30,19 @@ Image: Marina Beach, Chennai - the second longest beach in the world Image Court
     
     <item>
       <title>The SRE Interview Experience</title>
-      <link>http://www.bala-krishnan.com/posts/post9/</link>
+      <link>http://www.bala-krishnan.com/posts/sre-interviews/</link>
       <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/post9/</guid>
+      <guid>http://www.bala-krishnan.com/posts/sre-interviews/</guid>
       <description>I resigned from my role at Salesforce in September of 2023 and have been interviewing with multiple companies for SRE/DevOps/Platform Engineering roles. I was offered an SRE role with Rad AI and I have accepted it and will be joining them in the last week of January. I am glad that I was finally able to get an offer and I am excited to be exploring site reliability for a medical AI product.</description>
     </item>
     
     <item>
       <title>Google onsite interview - Systems SRE role</title>
-      <link>http://www.bala-krishnan.com/posts/post8/</link>
+      <link>http://www.bala-krishnan.com/posts/google-sre-onsite/</link>
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/post8/</guid>
+      <guid>http://www.bala-krishnan.com/posts/google-sre-onsite/</guid>
       <description>I did a virtual onsite interview with Google for the Systems SRE role in 2022. This post is about my preparation for the interview and my actual interview experience.
 In my previous post, I discussed the phone screen I had for the SRE role. After the phone screen, my recruiter got in touch with me, discussed the results of the interview and handed me over to another recruiter who handled the onsite interviews.</description>
     </item>
@@ -58,38 +58,38 @@ In my previous post, I discussed the phone screen I had for the SRE role. After 
     
     <item>
       <title>Google tech screen - Systems SRE role</title>
-      <link>http://www.bala-krishnan.com/posts/post7/</link>
+      <link>http://www.bala-krishnan.com/posts/google-tech-screen/</link>
       <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/post7/</guid>
+      <guid>http://www.bala-krishnan.com/posts/google-tech-screen/</guid>
       <description>I had my phone screen with a member of the Google SRE team last week. As I mentioned in my previous post, I am interviewing with Google for the Systems SRE role. I was nervous about the interview, given that I had failed this round in my two previous attempts. The interview covers practical coding and scripting and Linux fundamentals/trivia. The best part about being considered for the systems SRE role is that you will not be asked complex algorithmic questions.</description>
     </item>
     
     <item>
       <title>2 days before a Google interview</title>
-      <link>http://www.bala-krishnan.com/posts/post6/</link>
+      <link>http://www.bala-krishnan.com/posts/google-sre-interview/</link>
       <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/post6/</guid>
+      <guid>http://www.bala-krishnan.com/posts/google-sre-interview/</guid>
       <description>I am interviewing for the Systems SRE role with Google (Alphabet) in about 2 days. The SRE team at Google is something that I have looked up to ever since I read the first SRE book. I have tried interviewing for the role twice previously and I wasn&amp;rsquo;t able to go past the phone screen both the times. Hoping that the third time will be the charm!
 Google pioneered the concept of Site Reliability Engineering, which is an amalgamation of systems engineering, coding and scripting, and networking functions.</description>
     </item>
     
     <item>
       <title>What a year!</title>
-      <link>http://www.bala-krishnan.com/posts/post3/</link>
+      <link>http://www.bala-krishnan.com/posts/2021-review/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/post3/</guid>
+      <guid>http://www.bala-krishnan.com/posts/2021-review/</guid>
       <description>I grew up in the southern part of India and one of the things I loved doing the most at the end of the year was reading through the year-end summaries that the newspaper &amp;ldquo;The Hindu&amp;rdquo; published. It was a summary of the important events for every day of the year with some articles written by the top newsmakers of the year. This blog post is my attempt to do the same about how I did during 2021.</description>
     </item>
     
     <item>
       <title>The ever growing to-do list</title>
-      <link>http://www.bala-krishnan.com/posts/post2/</link>
+      <link>http://www.bala-krishnan.com/posts/2022-to-do/</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/post2/</guid>
+      <guid>http://www.bala-krishnan.com/posts/2022-to-do/</guid>
       <description>I set goals for how I want to grow my technical skills every year that I have been employed and fall short. 2021 was a similar year too. I set goals and fell short, by more than a mile.
 So, what did I plan to learn this year? I wanted to get better with my Kubernetes knowledge and clear the CKA certification. How did I fare? I did learn a lot about Kubernetes as part of my job and my oncall duties, but I was not able to take the certification and had to cancel the registration for the exam.</description>
     </item>
