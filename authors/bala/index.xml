@@ -6,7 +6,19 @@
     <description>Recent content in Bala on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/authors/bala/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/authors/bala/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes on Know Your Data: The Stats behind the Alerts</title>
+      <link>http://www.bala-krishnan.com/posts/stats-behind-alerts/</link>
+      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/stats-behind-alerts/</guid>
+      <description>I came across this amazing video from Dave McAllister in the &amp;ldquo;WTF is SRE 2023&amp;rdquo; conference on the statistics behind the alerts.
+Thanks to Dave for his clear explanation of the various concepts.
+Here are my notes on the video:
+Mean vs Median vs Mode - Mean = Measure of central tendency, the average value Median - In a sorted data set, median is the middle value Mode - Mode is the frequently used value in a dataset Arithmetic mean - Not the 50% mark.</description>
+    </item>
+    
     <item>
       <title>Historical coincidences</title>
       <link>http://www.bala-krishnan.com/posts/historical-coincidence/</link>
