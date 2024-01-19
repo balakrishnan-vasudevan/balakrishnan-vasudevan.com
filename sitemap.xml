@@ -2,10 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.bala-krishnan.com/about/</loc>
-    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+    <loc>http://www.bala-krishnan.com/tags/alerts/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/authors/bala/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/stats-behind-alerts/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/sre/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/statistics/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/about/</loc>
     <lastmod>2024-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/chennai/</loc>
@@ -17,22 +38,10 @@
     <loc>http://www.bala-krishnan.com/tags/history/</loc>
     <lastmod>2024-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/</loc>
-    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.bala-krishnan.com/posts/</loc>
-    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.bala-krishnan.com/tags/santa-barbara/</loc>
     <lastmod>2024-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/tags/</loc>
-    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.bala-krishnan.com/tags/interviews/</loc>
-    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.bala-krishnan.com/tags/sre/</loc>
     <lastmod>2024-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/sre-interview/</loc>

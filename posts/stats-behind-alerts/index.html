@@ -3,7 +3,7 @@
 
 <head>
   <title>
-  Google tech screen - Systems SRE role · Home
+  Notes on Know Your Data: The Stats behind the Alerts · Home
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,24 +13,24 @@
 
 
 <meta name="author" content="Balakrishnan Vasudevan">
-<meta name="description" content="Round 1 of the Google SRE interview">
+<meta name="description" content="Understanding the statistics behind the alerts">
 <meta name="keywords" content="blog,SRE,personal">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Google tech screen - Systems SRE role"/>
-<meta name="twitter:description" content="Round 1 of the Google SRE interview"/>
+<meta name="twitter:title" content="Notes on Know Your Data: The Stats behind the Alerts"/>
+<meta name="twitter:description" content="Understanding the statistics behind the alerts"/>
 
-<meta property="og:title" content="Google tech screen - Systems SRE role" />
-<meta property="og:description" content="Round 1 of the Google SRE interview" />
+<meta property="og:title" content="Notes on Know Your Data: The Stats behind the Alerts" />
+<meta property="og:description" content="Understanding the statistics behind the alerts" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.bala-krishnan.com/posts/google-tech-screen/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-06-24T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-06-24T00:00:00+00:00" />
+<meta property="og:url" content="http://www.bala-krishnan.com/posts/stats-behind-alerts/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-18T00:00:00+00:00" />
 
 
 
 
-<link rel="canonical" href="http://www.bala-krishnan.com/posts/google-tech-screen/">
+<link rel="canonical" href="http://www.bala-krishnan.com/posts/stats-behind-alerts/">
 
 
 <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -137,8 +137,8 @@
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="http://www.bala-krishnan.com/posts/google-tech-screen/">
-              Google tech screen - Systems SRE role
+            <a class="title-link" href="http://www.bala-krishnan.com/posts/stats-behind-alerts/">
+              Notes on Know Your Data: The Stats behind the Alerts
             </a>
           </h1>
         </div>
@@ -146,8 +146,8 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2022-06-24T00:00:00Z">
-                June 24, 2022
+              <time datetime="2024-01-18T00:00:00Z">
+                January 18, 2024
               </time>
             </span>
             <span class="reading-time">
@@ -163,27 +163,15 @@
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="/tags/interviews/">interviews</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
-      <a href="/tags/sre-interview/">sre interview</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
       <a href="/tags/sre/">sre</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/google-sre-interview/">google sre interview</a>
+      <a href="/tags/alerts/">alerts</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/google-sre-systems-engineering/">google sre systems engineering</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
-      <a href="/tags/google-sre/">google sre</a>
+      <a href="/tags/statistics/">statistics</a>
     </span></div>
 
         </div>
@@ -191,12 +179,104 @@
 
       <div class="post-content">
         
-        <p>I had my phone screen with a member of the Google SRE team last week. As I mentioned in my previous post, I am interviewing with Google for the Systems SRE role. I was nervous about the interview, given that I had failed this round in my two previous attempts. The interview covers practical coding and scripting and Linux fundamentals/trivia. The best part about being considered for the systems SRE role is that you will not be asked complex algorithmic questions. Questions tend to be more practical. Implementing a system function like &ldquo;ls&rdquo; in the coding language of your choice is an example. You would then be asked to optimize your solution and scale it to be able to run on large files or across multiple machines.</p>
-<p>The interview also includes a section on Unix/Linux fundamentals/trivia. A lot of these trivia questions used to be asked by recruiters in their initial screening calls, but it has now been moved to the phone screen round. It is good to brush up on system calls, commands and output fields, basic troubleshooting and similar areas.</p>
-<p>I interviewed with an SRE manager who was also based in the same time zone as me. After the usual exchange of pleasantries, we discussed some Linux trivia questions and my coding question was an extension of the trivia question that we were discussing about. We were short of time by the time we moved to the coding question, so I ended up having to explain my approach and how I would scale my solution instead of coding it. I felt really happy about the way the interview went, the questions were tricky, but not something someone with years of systems administration experience cannot handle.</p>
-<p>One of the more important aspects of this interview and any other round of the Google interview is to express your thoughts clearly, or think out loud to the interviewer. They want to know how you are approaching the problem. Make sure to ask loads of clarifying questions. Ask for help and be honest if you think you are stuck.</p>
-<p>A few hours after the interview, my recruiter contacted me to inform that they were satisfied with my performance in the interview and wanted me to schedule a day for my onsite interview. Yay!!</p>
-<p>More on that in my next post.</p>
+        <p>I came across this amazing video from Dave McAllister in the &ldquo;WTF is SRE 2023&rdquo; conference on the statistics behind the alerts.</p>
+<p><a href="https://www.youtube.com/watch?v=uWGAUn2ZQnQ"  class="external-link" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/uWGAUn2ZQnQ/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
+<p>Thanks to Dave for his clear explanation of the various concepts.</p>
+<p>Here are my notes on the video:</p>
+<ul>
+<li>Mean vs Median vs Mode -
+<ul>
+<li>Mean = Measure of central tendency, the average value</li>
+<li>Median - In a sorted data set, median is the middle value</li>
+<li>Mode - Mode is the frequently used value in a dataset</li>
+</ul>
+</li>
+<li>Arithmetic mean - Not the 50% mark. Useful for comparing to previous conditions. when working with time series, arithmetic mean needs to be calculated consistently to include new data.
+<ul>
+<li>Moving/Block average</li>
+</ul>
+</li>
+<li>Geometric mean - For things growing exponentially, multiply everything together, and take the nth root.
+<ul>
+<li>Number of deploys/unit, MTTR, Throughput calculations</li>
+</ul>
+</li>
+<li>Harmonic mean - performance when there are multiple different systems involved.
+<ul>
+<li>Great for latency/throughput</li>
+<li>Great for complex environments.</li>
+<li>Divide n by the sum of reciprocals = n/(1/x^1 + 1/x^2 + …..+ 1/x^n)</li>
+<li>Useful for outliers, represents the lowest value the most.</li>
+<li>Throughput when there is a single system instead of multiple systems</li>
+</ul>
+</li>
+<li>Arithmetic mean &gt; Geometric Mean &gt; Harmonic Mean</li>
+<li>Harmonic and geometric mean can only be used for non-zero datasets</li>
+<li>Median
+<ul>
+<li>Always 50% point of a normal curve</li>
+<li>Mean can be impacted by outlier and doesn’t recover spikes.</li>
+<li>Response time monitoring, anomaly detection , capacity planning</li>
+</ul>
+</li>
+<li>Mode
+<ul>
+<li>Most commonly used value</li>
+<li>Log Analysis or Security monitoring.</li>
+</ul>
+</li>
+<li>Probability - the possibility of an event happening</li>
+<li>Statistics - summation of information that has happened.</li>
+<li>Distributions
+<ul>
+<li>Normal = Data equally distributed.
+<ul>
+<li>Bell curve, not percent based</li>
+<li>Lead time measurement, anomaly analysis, SLO/SLI calculation</li>
+</ul>
+</li>
+<li>Poisson - Used to model the occurrence of rare events</li>
+<li>Beta - Used to track success/failure of binomial events</li>
+<li>Exponential - Time between async events
+<ul>
+<li>Models the rate (time between events that are unrelated)</li>
+<li>Network performance, user requests, messaging service, system failures</li>
+</ul>
+</li>
+<li>Weibull - Likelihood of failure
+<ul>
+<li>defined by a shape and a scale parameter</li>
+</ul>
+</li>
+<li>Log normal - Values based on many small events</li>
+</ul>
+</li>
+<li>Descriptive vs Inferential statistics
+<ul>
+<li>Descriptive uses whole data set to drive statistical conclusions.
+<ul>
+<li>Used for visualization, can define+extract trends</li>
+</ul>
+</li>
+<li>Inferential uses sampled data to draw conclusions.
+<ul>
+<li>Used for predictions or hypotenuse testing, can also visualize.</li>
+<li>leads to sampling.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Monitoring is now becoming a data problem. Observability (signals, metrics, traces, logs) adds to the amounts of data being ingested. This brings a need for sampling.</li>
+<li>Sampling - can give false indications, changes behavior from descriptive to inferential, necessary evil
+<ul>
+<li>Random sampling</li>
+<li>Stratified sampling</li>
+<li>Cluster sampling</li>
+<li>Systematic sampling</li>
+<li>Purposive sampling</li>
+</ul>
+</li>
+</ul>
 
       </div>
 
