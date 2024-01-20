@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 18 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes on Know Your Data: The Stats behind the Alerts</title>
-      <link>http://www.bala-krishnan.com/posts/stats-behind-alerts/</link>
+      <link>http://www.bala-krishnan.com/notes/stats-behind-alerts/</link>
       <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/stats-behind-alerts/</guid>
+      <guid>http://www.bala-krishnan.com/notes/stats-behind-alerts/</guid>
       <description>I came across this amazing video from Dave McAllister in the &amp;ldquo;WTF is SRE 2023&amp;rdquo; conference on the statistics behind the alerts.
 Thanks to Dave for his clear explanation of the various concepts.
 Here are my notes on the video:
@@ -85,15 +85,6 @@ In my previous post, I discussed the phone screen I had for the SRE role. After 
       <guid>http://www.bala-krishnan.com/posts/google-sre-interview/</guid>
       <description>I am interviewing for the Systems SRE role with Google (Alphabet) in about 2 days. The SRE team at Google is something that I have looked up to ever since I read the first SRE book. I have tried interviewing for the role twice previously and I wasn&amp;rsquo;t able to go past the phone screen both the times. Hoping that the third time will be the charm!
 Google pioneered the concept of Site Reliability Engineering, which is an amalgamation of systems engineering, coding and scripting, and networking functions.</description>
-    </item>
-    
-    <item>
-      <title>test!</title>
-      <link>http://www.bala-krishnan.com/notes/test-note/</link>
-      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.bala-krishnan.com/notes/test-note/</guid>
-      <description></description>
     </item>
     
     <item>

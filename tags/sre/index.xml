@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sre on Home</title>
+    <title>SRE on Home</title>
     <link>http://www.bala-krishnan.com/tags/sre/</link>
-    <description>Recent content in sre on Home</description>
+    <description>Recent content in SRE on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 18 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/sre/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes on Know Your Data: The Stats behind the Alerts</title>
-      <link>http://www.bala-krishnan.com/posts/stats-behind-alerts/</link>
+      <link>http://www.bala-krishnan.com/notes/stats-behind-alerts/</link>
       <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/stats-behind-alerts/</guid>
+      <guid>http://www.bala-krishnan.com/notes/stats-behind-alerts/</guid>
       <description>I came across this amazing video from Dave McAllister in the &amp;ldquo;WTF is SRE 2023&amp;rdquo; conference on the statistics behind the alerts.
 Thanks to Dave for his clear explanation of the various concepts.
 Here are my notes on the video:
