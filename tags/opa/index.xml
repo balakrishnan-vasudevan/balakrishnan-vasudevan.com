@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>opa on Home</title>
+    <link>http://www.bala-krishnan.com/tags/opa/</link>
+    <description>Recent content in opa on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/opa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OPA! - An issue with resource allocation</title>
+      <link>http://www.bala-krishnan.com/posts/opa/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/opa/</guid>
+      <description>In one of my previous roles at a leading cloud-based company, I encountered a fascinating challenge that underscored the importance of resource management in Kubernetes. While I can&amp;rsquo;t reveal specific company details, I&amp;rsquo;ll share a fictionalized account of an incident that carries valuable lessons for anyone navigating the complexities of scaling in a Kubernetes environment.
+The Scenario Link to heading Picture this: a team is conducting a rigorous performance test, rapidly deploying numerous pods.</description>
+    </item>
+    
+  </channel>
+</rss>
