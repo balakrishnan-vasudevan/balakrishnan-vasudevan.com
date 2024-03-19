@@ -6,7 +6,17 @@
     <description>Recent content in SRE on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/sre/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/sre/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring Distributed Systems: A Journey Through Papers</title>
+      <link>http://www.bala-krishnan.com/posts/exploring-distributed-systems/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/exploring-distributed-systems/</guid>
+      <description>As we step into a new year, many of us set personal goals to delve deeper into various domains of knowledge. For me, one such aspiration revolves around enhancing my comprehension of distributed systems. In this pursuit, I&amp;rsquo;ve curated a list of seminal papers spanning various facets of distributed systems, intending to dissect, analyze, and learn from them.
+While there exists an abundance of resources on distributed systems—ranging from blog posts to podcasts and videos—I aim to contribute to this reservoir by documenting my journey through these papers.</description>
+    </item>
+    
     <item>
       <title>OPA! - An issue with resource allocation</title>
       <link>http://www.bala-krishnan.com/posts/opa/</link>
