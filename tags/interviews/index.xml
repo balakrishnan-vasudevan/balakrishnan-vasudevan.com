@@ -6,7 +6,16 @@
     <description>Recent content in interviews on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/interviews/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/interviews/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Fallacy of Command-Line Interview Questions: Why Problem Solving Should Trump Memorization</title>
+      <link>http://www.bala-krishnan.com/posts/command-line-interviews/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/command-line-interviews/</guid>
+      <description>In the ever-evolving landscape of job interviews, especially in the tech industry, there&amp;rsquo;s a trend that persists like an unwelcome guest at a party: the grueling interrogation of command-line knowledge. Picture this: you&amp;rsquo;re in a virtual interview, sweating bullets as the interviewer fires off questions about obscure commands or demands you regurgitate the contents of some long-forgotten system file. It&amp;rsquo;s the stuff of nightmares for many candidates, and frankly, it&amp;rsquo;s time we reassess its validity.</description>
+    </item>
+    
     <item>
       <title>The SRE Interview Experience</title>
       <link>http://www.bala-krishnan.com/posts/sre-interviews/</link>

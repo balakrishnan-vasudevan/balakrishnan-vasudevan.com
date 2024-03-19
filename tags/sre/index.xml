@@ -18,6 +18,15 @@ While there exists an abundance of resources on distributed systems—ranging fr
     </item>
     
     <item>
+      <title>The Fallacy of Command-Line Interview Questions: Why Problem Solving Should Trump Memorization</title>
+      <link>http://www.bala-krishnan.com/posts/command-line-interviews/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/command-line-interviews/</guid>
+      <description>In the ever-evolving landscape of job interviews, especially in the tech industry, there&amp;rsquo;s a trend that persists like an unwelcome guest at a party: the grueling interrogation of command-line knowledge. Picture this: you&amp;rsquo;re in a virtual interview, sweating bullets as the interviewer fires off questions about obscure commands or demands you regurgitate the contents of some long-forgotten system file. It&amp;rsquo;s the stuff of nightmares for many candidates, and frankly, it&amp;rsquo;s time we reassess its validity.</description>
+    </item>
+    
+    <item>
       <title>OPA! - An issue with resource allocation</title>
       <link>http://www.bala-krishnan.com/posts/opa/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
