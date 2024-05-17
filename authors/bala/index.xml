@@ -6,7 +6,17 @@
     <description>Recent content in Bala on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/authors/bala/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/authors/bala/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Distributed Tracing</title>
+      <link>http://www.bala-krishnan.com/posts/tracing/</link>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/tracing/</guid>
+      <description>Ever felt like your application operates in a black box? You know things are happening, but it&amp;rsquo;s difficult to pinpoint exactly where bottlenecks occur or why errors surface. This is where Distributed Tracing comes in, offering a powerful tool to illuminate the inner workings of your complex software systems.
+Why is Tracing Essential? Link to heading Imagine a user journey through your application. They click a button, data flows across various services, and finally, a response appears on their screen.</description>
+    </item>
+    
     <item>
       <title>Exploring Distributed Systems: A Journey Through Papers</title>
       <link>http://www.bala-krishnan.com/posts/exploring-distributed-systems/</link>
