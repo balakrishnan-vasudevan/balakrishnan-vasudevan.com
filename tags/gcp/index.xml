@@ -14,8 +14,7 @@
       
       <guid>http://www.bala-krishnan.com/posts/tier-1-outage/</guid>
       <description>Ah, on-call rotations. They keep you sharp, but sometimes they test your patience in the most unexpected ways. During an oncall shift with a previous employer, a seemingly minor configuration change cascaded into a major incident, taking down an entire production cluster. Here&amp;rsquo;s the story, along with the valuable takeaways that helped us prevent similar situations in the future.
-The Plot Thickens: Tier 1 Networking and Missing Alerts
-The incident stemmed from a change deployed to our Google Cloud Platform (GCP) cluster.</description>
+Tier 1 Networking and Missing Alerts Link to heading The incident stemmed from a change deployed to our Google Cloud Platform (GCP) cluster.</description>
     </item>
     
   </channel>

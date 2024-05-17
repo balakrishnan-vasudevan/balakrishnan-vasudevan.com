@@ -180,7 +180,13 @@
       <div class="post-content">
         
         <p>Ah, on-call rotations. They keep you sharp, but sometimes they test your patience in the most unexpected ways. During an oncall shift with a previous employer, a seemingly minor configuration change cascaded into a major incident, taking down an entire production cluster. Here&rsquo;s the story, along with the valuable takeaways that helped us prevent similar situations in the future.</p>
-<p><strong>The Plot Thickens: Tier 1 Networking and Missing Alerts</strong></p>
+<h2 id="tier-1-networking-and-missing-alerts">
+  Tier 1 Networking and Missing Alerts
+  <a class="heading-link" href="#tier-1-networking-and-missing-alerts">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>The incident stemmed from a change deployed to our Google Cloud Platform (GCP) cluster. This cluster, specifically designed for a new product, was the set to use <a href="https://cloud.google.com/network-tiers/docs/overview#premium_tier"  class="external-link" target="_blank" rel="noopener">Tier 1 networking</a>. Tier 1 networking, while cost-effective, comes with limitations on availability compared to the Standard Tier typically used for production workloads.</p>
 <p>The change itself went smoothly, with no errors during the merge process. However, a crucial detail was overlooked: our account wasn&rsquo;t configured to utilize Tier 1 networking. This mismatch remained undetected as our infrastructure-as-code (IaC) continued to spin up instances.</p>
 <p>The consequence? As existing instances in the cluster recycled over the next ten days, attempts to launch replacements failed. GCP, adhering to the Tier 1 configuration, couldn&rsquo;t provision new instances. This left the entire cluster stranded, with no pods running and services unavailable.</p>
