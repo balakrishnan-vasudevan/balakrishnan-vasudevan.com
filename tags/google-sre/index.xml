@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google sre on Home</title>
+    <link>http://www.bala-krishnan.com/tags/google-sre/</link>
+    <description>Recent content in google sre on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/google-sre/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google onsite interview - Systems SRE role</title>
+      <link>http://www.bala-krishnan.com/posts/google-sre-onsite/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/google-sre-onsite/</guid>
+      <description>I did a virtual onsite interview with Google for the Systems SRE role in 2022. This post is about my preparation for the interview and my actual interview experience.
+In my previous post, I discussed the phone screen I had for the SRE role. After the phone screen, my recruiter got in touch with me, discussed the results of the interview and handed me over to another recruiter who handled the onsite interviews.</description>
+    </item>
+    
+    <item>
+      <title>Google tech screen - Systems SRE role</title>
+      <link>http://www.bala-krishnan.com/posts/google-tech-screen/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/google-tech-screen/</guid>
+      <description>I had my phone screen with a member of the Google SRE team last week. As I mentioned in my previous post, I am interviewing with Google for the Systems SRE role. I was nervous about the interview, given that I had failed this round in my two previous attempts. The interview covers practical coding and scripting and Linux fundamentals/trivia. The best part about being considered for the systems SRE role is that you will not be asked complex algorithmic questions.</description>
+    </item>
+    
+    <item>
+      <title>2 days before a Google interview</title>
+      <link>http://www.bala-krishnan.com/posts/google-sre-interview/</link>
+      <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/google-sre-interview/</guid>
+      <description>I am interviewing for the Systems SRE role with Google (Alphabet) in about 2 days. The SRE team at Google is something that I have looked up to ever since I read the first SRE book. I have tried interviewing for the role twice previously and I wasn&amp;rsquo;t able to go past the phone screen both the times. Hoping that the third time will be the charm!
+Google pioneered the concept of Site Reliability Engineering, which is an amalgamation of systems engineering, coding and scripting, and networking functions.</description>
+    </item>
+    
+  </channel>
+</rss>

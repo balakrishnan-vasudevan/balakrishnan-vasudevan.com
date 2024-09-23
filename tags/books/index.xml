@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books on Home</title>
+    <link>http://www.bala-krishnan.com/tags/books/</link>
+    <description>Recent content in Books on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The ever growing to-do list</title>
+      <link>http://www.bala-krishnan.com/posts/2022-to-do/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/2022-to-do/</guid>
+      <description>I set goals for how I want to grow my technical skills every year that I have been employed and fall short. 2021 was a similar year too. I set goals and fell short, by more than a mile.
+So, what did I plan to learn this year? I wanted to get better with my Kubernetes knowledge and clear the CKA certification. How did I fare? I did learn a lot about Kubernetes as part of my job and my oncall duties, but I was not able to take the certification and had to cancel the registration for the exam.</description>
+    </item>
+    
+  </channel>
+</rss>

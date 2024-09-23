@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  The Fallacy of Command-Line Interview Questions: Why Problem Solving Should Trump Memorization · Home
+</title>
+  <meta name='LTF_verify' content='c1b83ba90947070ea72988d9256501a1'/>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Balakrishnan Vasudevan">
+<meta name="description" content="No memorization">
+<meta name="keywords" content="blog,SRE,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Fallacy of Command-Line Interview Questions: Why Problem Solving Should Trump Memorization"/>
+<meta name="twitter:description" content="No memorization"/>
+
+<meta property="og:title" content="The Fallacy of Command-Line Interview Questions: Why Problem Solving Should Trump Memorization" />
+<meta property="og:description" content="No memorization" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.bala-krishnan.com/posts/command-line-interviews/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-03-19T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="http://www.bala-krishnan.com/posts/command-line-interviews/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/notes/">Notes</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://www.bala-krishnan.com/posts/command-line-interviews/">
+              The Fallacy of Command-Line Interview Questions: Why Problem Solving Should Trump Memorization
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-03-19T00:00:00Z">
+                March 19, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/bala/">Bala</a></div>
+
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/interviews/">interviews</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/sre-interview/">sre interview</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/sre/">SRE</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>In the ever-evolving landscape of job interviews, especially in the tech industry, there&rsquo;s a trend that persists like an unwelcome guest at a party: the grueling interrogation of command-line knowledge. Picture this: you&rsquo;re in a virtual interview, sweating bullets as the interviewer fires off questions about obscure commands or demands you regurgitate the contents of some long-forgotten system file. It&rsquo;s the stuff of nightmares for many candidates, and frankly, it&rsquo;s time we reassess its validity.</p>
+<p>Let&rsquo;s be real here: when was the last time you found yourself stranded amid an incident, scratching your head, thinking, &ldquo;If only I had memorized that exact sequence of commands during my interview&rdquo;? Probably never. In the real world, when faced with a problem, you don&rsquo;t rely solely on your memory bank of commands. You consult the documentation, you search online, and you leverage your experience and problem-solving skills.</p>
+<p>Yet, some interviewers seem to cling to this archaic notion that a candidate&rsquo;s ability to regurgitate commands on command somehow correlates with their prowess as a problem solver or a competent employee. Spoiler alert: it doesn&rsquo;t.</p>
+<p>Consider the scenario where an interviewer probes a candidate about the files in the <code>/etc/proc</code> folder on a Linux machine. While having a comprehensive understanding of the Linux file system is undoubtedly valuable, the expectation that a candidate should effortlessly recite every file and its function from memory seems impractical. In reality, even seasoned professionals may need to refer to documentation or run commands to retrieve such information, especially in high-pressure situations.</p>
+<p>Reflecting on personal experiences, it&rsquo;s disheartening to note how an interviewer&rsquo;s insistence on quizzing candidates on trivial technical details can sometimes foreshadow deeper issues within the organization. Take, for instance, the aforementioned scenario where an interviewer fixates on commands related to system files. In my case, this individual later assumed a managerial role—one that unfortunately proved to be fraught with challenges.</p>
+<p>However, it&rsquo;s essential to approach such situations with a nuanced perspective. While it&rsquo;s tempting to attribute managerial shortcomings to interview practices, it&rsquo;s crucial to recognize the complexity of leadership dynamics. Factors such as communication skills, team management, and organizational culture play pivotal roles in shaping managerial effectiveness.</p>
+<p>As an interviewer myself, I&rsquo;ve always believed in gauging a candidate&rsquo;s problem-solving abilities rather than their ability to memorize arcane commands. I want to see how they approach a problem, how they think through it, how they adapt and learn on the fly. In the real world, I can teach someone how to navigate a directory structure or run a specific command, but I can&rsquo;t teach them how to think critically or creatively solve problems.</p>
+<p>So, why do we persist with this outdated interviewing practice? Perhaps it&rsquo;s a misguided attempt to assess technical proficiency, or maybe it&rsquo;s just inertia, a tradition that refuses to die. But it&rsquo;s time for a paradigm shift. Let&rsquo;s focus on what truly matters: a candidate&rsquo;s ability to learn, adapt, and innovate.</p>
+<p>As both candidates and interviewers, we must collectively reassess the metrics by which we evaluate technical proficiency. Instead of fixating on memorization, let&rsquo;s pivot toward assessing problem-solving abilities, adaptability, and the capacity for continuous learning. Embracing a more holistic approach to technical interviews not only fosters a more inclusive and equitable hiring process but also ensures that candidates are evaluated on criteria that truly matter in the modern workplace.</p>
+<p>To my fellow interviewers, I implore you: ditch the command-line trivia and instead focus on evaluating a candidate&rsquo;s problem-solving skills. Ask them about real-world scenarios they&rsquo;ve encountered, how they approached them, and what they learned from the experience. Look for passion, curiosity, and a hunger for knowledge—not a memorized list of terminal commands.</p>
+<p>And to my fellow candidates, remember this: your worth is not determined by your ability to recite commands from memory. Embrace your problem-solving abilities, showcase your creativity, and don&rsquo;t be afraid to admit when you don&rsquo;t have all the answers. After all, in the real world, Google is just a click away.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2021 -
+    
+    2024
+     Balakrishnan Vasudevan 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SP2Q8ZR43M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SP2Q8ZR43M');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

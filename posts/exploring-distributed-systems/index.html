@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Exploring Distributed Systems: A Journey Through Papers · Home
+</title>
+  <meta name='LTF_verify' content='c1b83ba90947070ea72988d9256501a1'/>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Balakrishnan Vasudevan">
+<meta name="description" content="Enhancing my knowledge of distributed systems">
+<meta name="keywords" content="blog,SRE,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Exploring Distributed Systems: A Journey Through Papers"/>
+<meta name="twitter:description" content="Enhancing my knowledge of distributed systems"/>
+
+<meta property="og:title" content="Exploring Distributed Systems: A Journey Through Papers" />
+<meta property="og:description" content="Enhancing my knowledge of distributed systems" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.bala-krishnan.com/posts/exploring-distributed-systems/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-03-19T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="http://www.bala-krishnan.com/posts/exploring-distributed-systems/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/notes/">Notes</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://www.bala-krishnan.com/posts/exploring-distributed-systems/">
+              Exploring Distributed Systems: A Journey Through Papers
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-03-19T00:00:00Z">
+                March 19, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/bala/">Bala</a></div>
+
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/sre/">SRE</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/distributed-systems/">distributed systems</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/systems/">systems</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>As we step into a new year, many of us set personal goals to delve deeper into various domains of knowledge. For me, one such aspiration revolves around enhancing my comprehension of distributed systems. In this pursuit, I&rsquo;ve curated a list of seminal papers spanning various facets of distributed systems, intending to dissect, analyze, and learn from them.</p>
+<p>While there exists an abundance of resources on distributed systems—ranging from blog posts to podcasts and videos—I aim to contribute to this reservoir by documenting my journey through these papers. Inspired by the insightful work of Micah Learner and his meticulous dissections of papers on his <a href="https://www.micahlerner.com/"  class="external-link" target="_blank" rel="noopener">website</a> and <a href="https://www.youtube.com/@micah_reads_papers"  class="external-link" target="_blank" rel="noopener">YouTube channel</a>, I&rsquo;ve adopted a structured approach using his provided template, which I&rsquo;ve found immensely beneficial.</p>
+<h1 id="papers-to-explore">
+  Papers to Explore
+  <a class="heading-link" href="#papers-to-explore">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="consensus">
+  Consensus
+  <a class="heading-link" href="#consensus">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://cse.buffalo.edu/tech-reports/2016-02.orig.pdf"  class="external-link" target="_blank" rel="noopener">Consensus in the cloud - Paxos systems demystified</a></li>
+<li><a href="https://lamport.azurewebsites.net/pubs/paxos-simple.pdf"  class="external-link" target="_blank" rel="noopener">Paxos made simple</a></li>
+<li><a href="https://www.cs.utexas.edu/users/lorenzo/corsi/cs380d/papers/paper2-1.pdf"  class="external-link" target="_blank" rel="noopener">Paxos made live</a></li>
+<li><a href="https://web.stanford.edu/~ouster/cgi-bin/papers/raft-atc14"  class="external-link" target="_blank" rel="noopener">Raft</a></li>
+</ul>
+<h2 id="statistics">
+  Statistics
+  <a class="heading-link" href="#statistics">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://dl.acm.org/doi/10.1145/2890780"  class="external-link" target="_blank" rel="noopener">Statistics for engineers</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42553.pdf"  class="external-link" target="_blank" rel="noopener">Host load prediction in a Google Compute Cloud with a Bayesian Model</a></li>
+</ul>
+<h2 id="observability">
+  Observability
+  <a class="heading-link" href="#observability">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://research.facebook.com/publications/scuba-diving-into-data-at-facebook/"  class="external-link" target="_blank" rel="noopener">Scuba</a></li>
+<li><a href="https://www.vldb.org/pvldb/vol15/p3522-mo.pdf"  class="external-link" target="_blank" rel="noopener">Kraken</a></li>
+<li><a href="https://research.google/pubs/dapper-a-large-scale-distributed-systems-tracing-infrastructure/"  class="external-link" target="_blank" rel="noopener">Dapper</a></li>
+</ul>
+<h2 id="databases">
+  Databases
+  <a class="heading-link" href="#databases">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://www.amazon.science/publications/amazon-aurora-design-considerations-for-high-throughput-cloud-native-relational-databases"  class="external-link" target="_blank" rel="noopener">Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases</a></li>
+<li><a href="https://www.usenix.org/system/files/atc22-elhemali.pdf"  class="external-link" target="_blank" rel="noopener">Amazon DynamoDB</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41344.pdf"  class="external-link" target="_blank" rel="noopener">F1 - SQL Database</a></li>
+<li><a href="https://research.google/pubs/monarch-googles-planet-scale-in-memory-time-series-database/"  class="external-link" target="_blank" rel="noopener">Monarch - Time series database</a></li>
+<li><a href="https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf?mob=1"  class="external-link" target="_blank" rel="noopener">Spanner</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf"  class="external-link" target="_blank" rel="noopener">Bigtable</a></li>
+</ul>
+<h2 id="storage-systems">
+  Storage Systems
+  <a class="heading-link" href="#storage-systems">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-muralidhar.pdf"  class="external-link" target="_blank" rel="noopener">F4 - Blob storage</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf"  class="external-link" target="_blank" rel="noopener">Google File System</a></li>
+<li><a href="https://pages.cs.wisc.edu/~akella/CS838/F16/838-CloudPapers/hdfs.pdf"  class="external-link" target="_blank" rel="noopener">Hadoop</a></li>
+<li><a href="https://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf"  class="external-link" target="_blank" rel="noopener">Cassandra</a></li>
+<li><a href="https://event.cwi.nl/lsde/papers/p215-dageville-snowflake.pdf"  class="external-link" target="_blank" rel="noopener">Snowflake Elastic Data Warehouse</a></li>
+</ul>
+<h2 id="authentication">
+  Authentication
+  <a class="heading-link" href="#authentication">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://research.google/pubs/zanzibar-googles-consistent-global-authorization-system/"  class="external-link" target="_blank" rel="noopener">Zanzibar</a></li>
+</ul>
+<h2 id="locking">
+  Locking
+  <a class="heading-link" href="#locking">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/chubby-osdi06.pdf"  class="external-link" target="_blank" rel="noopener">Chubby</a></li>
+<li><a href="https://www.usenix.org/legacy/event/atc10/tech/full_papers/Hunt.pdf"  class="external-link" target="_blank" rel="noopener">Zookeeper</a></li>
+</ul>
+<h2 id="web-scale-systems">
+  Web Scale Systems
+  <a class="heading-link" href="#web-scale-systems">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44686.pdf"  class="external-link" target="_blank" rel="noopener">High-Availability at Massive Scale: Building Google&rsquo;s Data Infrastructure for Ads</a></li>
+<li><a href="https://research.google/pubs/large-scale-cluster-management-at-google-with-borg/"  class="external-link" target="_blank" rel="noopener">Borg</a></li>
+<li><a href="https://research.google/pubs/borg-the-next-generation/"  class="external-link" target="_blank" rel="noopener">Borg: the Next Generation</a></li>
+<li><a href="https://notes.stephenholiday.com/Kafka.pdf"  class="external-link" target="_blank" rel="noopener">Kafka</a></li>
+<li><a href="https://scontent-den2-1.xx.fbcdn.net/v/t39.8562-6/240873052_277412237132971_6278324660880331641_n.pdf?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=e280be&amp;_nc_ohc=uu-a5STpJw4AX8v_WSA&amp;_nc_ht=scontent-den2-1.xx&amp;oh=00_AfAyhtH_6oe1hcDUuV_yM3kb2VtWyV01Gkv8TkAmDRaAgA&amp;oe=65FF2042"  class="external-link" target="_blank" rel="noopener">Scaling Memcache at Facebook</a></li>
+<li><a href="https://storage.googleapis.com/gweb-research2023-media/pubtools/pdf/1378bbe6dbc2988bf4968cae6f0654996175fcfb.pdf"  class="external-link" target="_blank" rel="noopener">Maglev</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42551.pdf"  class="external-link" target="_blank" rel="noopener">Web Scale Job Scheduling</a></li>
+<li><a href="https://research.google/pubs/robust-large-scale-machine-learning-in-the-cloud/"  class="external-link" target="_blank" rel="noopener">Robust large-scale machine learning in the cloud</a></li>
+</ul>
+<h2 id="general">
+  General
+  <a class="heading-link" href="#general">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://cdn.theatlantic.com/media/archives/1945/07/176-1/132407932.pdf"  class="external-link" target="_blank" rel="noopener">As We May Think by Vannevar Bush</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/33339.pdf"  class="external-link" target="_blank" rel="noopener">Simple Efficient Load balancing algorithms for peer-to-peer systems</a></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3543146.3543148"  class="external-link" target="_blank" rel="noopener">Queueing theory</a></li>
+</ul>
+<p>Through this journey, I aim not only to deepen my understanding of distributed systems but also to share insights and lessons gleaned from these papers. Each paper represents a treasure trove of knowledge, waiting to be unraveled and understood. By embarking on this expedition, I hope to contribute to the collective pool of knowledge surrounding distributed systems and inspire others to embark on similar quests in their areas of interest.</p>
+<p>Stay tuned as I embark on this enlightening journey through the intricate world of distributed systems.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2021 -
+    
+    2024
+     Balakrishnan Vasudevan 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SP2Q8ZR43M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SP2Q8ZR43M');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
