@@ -2,28 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.bala-krishnan.com/posts/tier-1-outage/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.bala-krishnan.com/authors/bala/</loc>
+    <lastmod>2024-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/cka/</loc>
+    <lastmod>2024-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/</loc>
+    <lastmod>2024-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/kubernetes/</loc>
+    <lastmod>2024-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/</loc>
+    <lastmod>2024-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/</loc>
+    <lastmod>2024-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/cka/</loc>
+    <lastmod>2024-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/tier-1-outage/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/gcp/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.bala-krishnan.com/tags/networking/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.bala-krishnan.com/tags/sre/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.bala-krishnan.com/tags/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/posts/tracing/</loc>
@@ -49,9 +58,6 @@
   </url><url>
     <loc>http://www.bala-krishnan.com/posts/command-line-interviews/</loc>
     <lastmod>2024-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.bala-krishnan.com/tags/kubernetes/</loc>
-    <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/opa/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>

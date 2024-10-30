@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CKA</title>
+      <link>http://www.bala-krishnan.com/tags/cka/</link>
+      <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/cka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>http://www.bala-krishnan.com/tags/kubernetes/</link>
+      <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>GCP</title>
       <link>http://www.bala-krishnan.com/tags/gcp/</link>
@@ -76,15 +94,6 @@
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>http://www.bala-krishnan.com/tags/systems/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubernetes</title>
-      <link>http://www.bala-krishnan.com/tags/kubernetes/</link>
-      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.bala-krishnan.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     
