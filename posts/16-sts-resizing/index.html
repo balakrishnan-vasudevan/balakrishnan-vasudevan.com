@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Resizing StatefulSet PVs Without Downtime in Production · Home
+</title>
+  <meta name='LTF_verify' content='c1b83ba90947070ea72988d9256501a1'/>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Balakrishnan Vasudevan">
+<meta name="description" content="Resizing a statefulset without restarting the pods">
+<meta name="keywords" content="blog,SRE,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Resizing StatefulSet PVs Without Downtime in Production"/>
+<meta name="twitter:description" content="Resizing a statefulset without restarting the pods"/>
+
+<meta property="og:title" content="Resizing StatefulSet PVs Without Downtime in Production" />
+<meta property="og:description" content="Resizing a statefulset without restarting the pods" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.bala-krishnan.com/posts/16-sts-resizing/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-12-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-12-22T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="http://www.bala-krishnan.com/posts/16-sts-resizing/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://www.bala-krishnan.com/posts/16-sts-resizing/">
+              Resizing StatefulSet PVs Without Downtime in Production
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-12-22T00:00:00Z">
+                December 22, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/kubernetes/">kubernetes</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/statefulset/">statefulset</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/persistent-volumes/">persistent volumes</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Recently, I worked on resizing a statefulset. One of our workloads was constantly restarting due to the disk space filling up. The process of resizing the persistent volume of a statefulset is straightforward. You scale down the statefulset, modify the size of the underlying PVC, and then scale up the statefulset however, in this case, there were multiple complications and constraints.  To begin with, our PVCs were configured to be deleted when they were not bound to any pod. To complicate matters further, this was deployed in production, and we did not want to risk a loss of user data. The only solution was to figure out a way to scale the storage of the statefulsets without having to restart the underlying pods. After some research I found a way to do this.</p>
+<h2 id="statefulset">
+  StatefulSet:
+  <a class="heading-link" href="#statefulset">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>StatefulSet is the workload API object used to manage stateful applications. A StatefulSet runs a group of Pods, and maintains a sticky identity for each of those Pods. This is useful for managing applications that need persistent storage or a stable, unique network identity.</p>
+<h2 id="stateful-vs-stateless">
+  Stateful vs Stateless:
+  <a class="heading-link" href="#stateful-vs-stateless">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>A stateful application, saves data to persistent disk storage for use by the server, by clients, and other applications. Examples of stateful applications could be a database or key-value store to which data is saved and retrieved by other applications.
+A stateless application does not read nor store information about its state. This is best for containers as they, by design work best with stateless applications, as Kubernetes is able to create and remove containers in a rapid and dynamic manner.</p>
+<h2 id="storage-abstractions-in-kubernetes">
+  Storage Abstractions in Kubernetes:
+  <a class="heading-link" href="#storage-abstractions-in-kubernetes">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Kubernetes handles storage through various abstractions that allow applications to use persistent or ephemeral storage seamlessly. These abstractions decouple storage provisioning and usage, enabling portability and flexibility in deploying workloads. The primary storage abstractions in Kubernetes include:</p>
+<p>Volumes: A directory that is accessible to a container and is managed at the pod level. Volumes are tied to the pod&rsquo;s lifecycle but can survive container restarts.</p>
+<p>Persistent Volumes (PVs): A cluster-wide storage resource that is provisioned either dynamically or statically. It abstracts the underlying storage, whether it is a cloud provider, local disk, or network file system.</p>
+<p>Persistent Volume Claims (PVCs): A request for storage by a user. PVCs claim PVs and provide an abstraction for users to consume storage without worrying about implementation details.</p>
+<p>Storage Classes: Define storage provisioners and parameters for dynamic provisioning of PVs. They allow administrators to configure policies like replication, IOPS, and disk type.</p>
+<p>CSI (Container Storage Interface): A standard interface that enables Kubernetes to interact with different storage systems uniformly. CSI allows storage vendors to create plugins for Kubernetes.</p>
+<p>This illustrates the flow:</p>
+<ol>
+<li>Pods request storage via PVCs.</li>
+<li>PVCs bind to suitable PVs.</li>
+<li>Storage classes and provisioners manage the creation and provisioning of PVs dynamically.</li>
+<li>PVs interface with backend storage systems (e.g., cloud storage, local storage).</li>
+</ol>
+<pre tabindex="0"><code>+-----------------------------------------------------------+
+|                        Kubernetes Cluster                 |
+|                                                           |
+|  +-----------------+                                      |
+|  | Storage Classes |--------------------------------------|  
+|  +-----------------+                                      |
+|          |                                                |
+|   +------v------+                                         |
+|   | Provisioner |                                         |
+|   +-------------+                                         |
+|          |                                                |
+|   +------v-------+     +-------------------------+        |
+|   |  Persistent  |&lt;---&gt;| Backend Storage Systems |        |
+|   |  Volumes (PV)|     | (EBS, GCE PD, NFS, etc.)|        |
+|   +--------------+     +-------------------------+        |
+|          ^                                                |
+|          |                                                |
+|   +------v------+                                         |
+|   | Persistent  |                                         |
+|   | Volume Claim|                                         |
+|   +-------------+                                         |
+|          ^                                                |
+|          |                                                |
+|   +------v-------+                                        |
+|   |    Pods      |                                        |
+|   | (Containers) |                                        |
+|   +--------------+                                        |
++-----------------------------------------------------------+
+</code></pre><h2 id="resizing-the-statefulset">
+  Resizing the statefulset
+  <a class="heading-link" href="#resizing-the-statefulset">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>As I mentioned at the beginning of this post, I had to ensure that the statefulset was upgraded without deleting the pods that were currently running so that the underlying volumes were not deleted. Here are the steps i followed,</p>
+<ol>
+<li>Identify the PVC being used by the statefulset. Make a copy of the stateful set configuration.</li>
+</ol>
+<p><code>kubectl get sts &lt;sts&gt; -n &lt;ns&gt; -o yaml &gt; sts</code></p>
+<p>Make sure you have a way to recreate the StatefulSet object. Remove any unnecessary fields from the configuration - this could include the timestamp when the statefulset was created and other metadata.</p>
+<ol start="2">
+<li>Delete the StatefulSet without deleting the pods.</li>
+</ol>
+<p><code>kubectl delete sts &lt;sts&gt; -n &lt;sts&gt; --cascade=orphan</code></p>
+<p>By passing <code>--cascade=orphan</code> to kubectl delete, the Pods managed by the StatefulSet are left behind even after the StatefulSet object itself is deleted.</p>
+<ol start="3">
+<li>Modify the PVC object with the desired storage.</li>
+</ol>
+<p><code>kubectl edit pvc &lt;pvc-name&gt; -n &lt;namespace&gt; </code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># Please edit the object below. Lines beginning with a &#39;#&#39; will be ignored,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># and an empty file will abort the edit. If an error occurs while saving this file will be</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># reopened with the relevant failures.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">#</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">v1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">PersistentVolumeClaim</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">metadata</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">annotations</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">pv.kubernetes.io/bind-completed</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;yes&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">pv.kubernetes.io/bound-by-controller</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;yes&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volume.beta.kubernetes.io/storage-provisioner</span><span class="p">:</span><span class="w"> </span><span class="l">disk.csi.azure.com</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volume.kubernetes.io/selected-node</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;redacted-node&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volume.kubernetes.io/storage-provisioner</span><span class="p">:</span><span class="w"> </span><span class="l">disk.csi.azure.com</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">finalizers</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">kubernetes.io/pvc-protection</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;redacted-app&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">service</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;redacted-service&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l">v1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;redacted-name&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;redacted-namespace&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">resourceVersion</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;redacted-resource-version&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">uid</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;redacted-uid&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">spec</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">accessModes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">ReadWriteOnce</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">resources</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">requests</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">storage</span><span class="p">:</span><span class="w"> </span><span class="l">128Gi ===&gt; 256Gi (Edit)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">storageClassName</span><span class="p">:</span><span class="w"> </span><span class="l">managed-premium</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">volumeMode</span><span class="p">:</span><span class="w"> </span><span class="l">Filesystem</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">volumeName</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;redacted-volume-name&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">status</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">accessModes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">ReadWriteOnce</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">capacity</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">storage</span><span class="p">:</span><span class="w"> </span><span class="l">128Gi ===&gt; 256Gi (Edit)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">phase</span><span class="p">:</span><span class="w"> </span><span class="l">Bound</span><span class="w">
+</span></span></span></code></pre></div><p>Save this configuration once you have modified the storage.</p>
+<ol start="4">
+<li>Recreate the StatefulSet with the new storage request: The StatefulSet will take charge of the orphan pods again, and will update the storage spec without recreating them.</li>
+</ol>
+<p><code>kubectl apply -f sts -n &lt;ns&gt; </code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="w">  </span><span class="nt">Events</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Type     Reason                      Age    From                                 Message</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>---- <span class="w">    </span>------ <span class="w">                     </span>---- <span class="w">  </span>---- <span class="w">                                </span>-------<span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Normal   Resizing                    3m11s  external-resizer disk.csi.azure.com  External resizer is resizing volume pvc-abcd-efg-hijk-lmno-pqrst123</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Warning  ExternalExpanding           3m11s  volume_expand                        waiting for an external controller to expand this PVC</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Normal   FileSystemResizeRequired    37s    external-resizer disk.csi.azure.com  Require file system resize of volume on node</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">Normal   FileSystemResizeSuccessful  19s    kubelet                              MountVolume.NodeExpandVolume succeeded for volume &#34;pvc-abcd-efg-hijk-lmno-pqrst123&#34; </span><span class="w">
+</span></span></span></code></pre></div><p>While working with a StatefulSet stored in our repository, I encountered an issue with mounting ConfigMaps for environment variables. The source code lacked the hash of the ConfigMap, so when the StatefulSet configuration was applied, the controller looked for a ConfigMap named <code>configmap-name</code>. However, the actual ConfigMap had a name like <code>configmap-name-12fef3</code>, and the mismatch caused the controller to fail in mounting it.</p>
+<p>During this process, one pod in the StatefulSet restarted. While the other two pods continued running without issues, the newly restarted pod couldn&rsquo;t mount the ConfigMap and repeatedly failed to start.</p>
+<p>This could have been avoided if I had used the stored StatefulSet configuration from Step (1), as it included the correct ConfigMap name with the hash. To resolve the issue, I re-applied the saved StatefulSet configuration, which corrected the ConfigMap reference and allowed the pod to start successfully.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2021 -
+    
+    2024
+     Balakrishnan Vasudevan 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SP2Q8ZR43M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SP2Q8ZR43M');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

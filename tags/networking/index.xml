@@ -9,12 +9,11 @@
     <lastBuildDate>Fri, 17 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Tier-rifying oncall shift</title>
-      <link>http://www.bala-krishnan.com/posts/tier-1-outage/</link>
+      <link>http://www.bala-krishnan.com/posts/13-tier-1-outage/</link>
       <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/tier-1-outage/</guid>
-      <description>Ah, on-call rotations. They keep you sharp, but sometimes they test your patience in the most unexpected ways. During an oncall shift with a previous employer, a seemingly minor configuration change cascaded into a major incident, taking down an entire production cluster. Here&amp;rsquo;s the story, along with the valuable takeaways that helped us prevent similar situations in the future.
-Tier 1 Networking and Missing Alerts Link to heading The incident stemmed from a change deployed to our Google Cloud Platform (GCP) cluster.</description>
+      <guid>http://www.bala-krishnan.com/posts/13-tier-1-outage/</guid>
+      <description>Note: The following is a recount of an incident that occurred during my time as an SRE with a previous company. I do not have access to the original outage report and I am sharing this story based on my recollection. While I may not remember every detail with complete accuracy, the general sequence of events is described here to the best of my ability. Any errors or omissions are entirely my own.</description>
     </item>
     
   </channel>

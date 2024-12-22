@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 16 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/tracing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Distributed Tracing</title>
-      <link>http://www.bala-krishnan.com/posts/tracing/</link>
+      <link>http://www.bala-krishnan.com/posts/12-tracing/</link>
       <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/tracing/</guid>
+      <guid>http://www.bala-krishnan.com/posts/12-tracing/</guid>
       <description>Ever felt like your application operates in a black box? You know things are happening, but it&amp;rsquo;s difficult to pinpoint exactly where bottlenecks occur or why errors surface. This is where Distributed Tracing comes in, offering a powerful tool to illuminate the inner workings of your complex software systems.
 Why is Tracing Essential? Link to heading Imagine a user journey through your application. They click a button, data flows across various services, and finally, a response appears on their screen.</description>
     </item>

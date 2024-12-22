@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Taking the Certified Kubernetes Administrator Exam · Home
+</title>
+  <meta name='LTF_verify' content='c1b83ba90947070ea72988d9256501a1'/>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Balakrishnan Vasudevan">
+<meta name="description" content="How I prepared for the exam and finally cleared the certification">
+<meta name="keywords" content="blog,SRE,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Taking the Certified Kubernetes Administrator Exam"/>
+<meta name="twitter:description" content="How I prepared for the exam and finally cleared the certification"/>
+
+<meta property="og:title" content="Taking the Certified Kubernetes Administrator Exam" />
+<meta property="og:description" content="How I prepared for the exam and finally cleared the certification" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.bala-krishnan.com/posts/15-cka/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-10-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-10-30T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="http://www.bala-krishnan.com/posts/15-cka/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://www.bala-krishnan.com/posts/15-cka/">
+              Taking the Certified Kubernetes Administrator Exam
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-10-30T00:00:00Z">
+                October 30, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/cka/">CKA</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/kubernetes/">kubernetes</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>One of the goals I set for myself for this year was to clear the <a href="https://trainingportal.linuxfoundation.org/courses/certified-kubernetes-administrator-cka"  class="external-link" target="_blank" rel="noopener">Certified Kubernetes Administrator</a> certification offered by CNCF. I have been working on Kubernetes since 2019. At Salesforce, I had the opportunity to work on managing more than 400 EKS clusters and control and data plane components in over 20 datacenters spread all over the world. I consider myself to be adept at troubleshooting issues with Kuberentes, but I wanted to get this certification in order to prove to myself that I understood the various concepts related to the operation of a Kuberentes cluster. I had paid to take this certification a couple of years ago, did not schedule the exam and let my order expire.</p>
+<p>A year ago, I paid to take this certification again, but kept rescheduling the exam out of sheer procrastination. At the beginning of this year, I was notified that my order was about to expire and I had to schedule my exam as soon as possible. However, in the midst of two job changes and a bunch of personal issues, I was not able to complete the training necessary nor to the other required reading in order to complete the certification.</p>
+<p><img src="https://bala-krishnan.com/images/reschedule.jpg" alt="Rescheduling"></p>
+<p>With the deadline for the order expiry approaching, I decided that I had to bite the bullet and do the certification. I started off by going through the <a href="https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/?couponCode=ACCAGE0923"  class="external-link" target="_blank" rel="noopener">&ldquo;Certified Kubernetes Administrator (CKA) with Practice Tests&rdquo;</a> course on Udemy taught by Mumshad Mannambeth.
+This is a great course that goes into great detail into the various concepts necessary to understand Kubernetes and ace the certification. The course also includes multiple practice tests that helped me to hone my skills. Apart from the course, I also went through the killer.sh simulations that come included with the certification purchase on CNCF. Both of these came in handy as I took my certification last month.</p>
+<p>This is an open-book exam, where you have access to the official Kubernetes documentation to look up commands or other information. I would highly recommend familiarizing yourself with the documentation. As you do your practice tests, use the documentation, familiarize yourself with how the information is presented, which commands to use and which posts on the documentation to avoid.</p>
+<p>I cleared the exam successfully with two days remaining for my initial order to expire. I&rsquo;m very happy that I was able to achieve the goal I set for myself at the beginning of this year.</p>
+<p><img src="https://bala-krishnan.com/images/cert.jpg" alt="Cert"></p>
+<p>The areas of focus for the CKA exam are supposed to change shortly. Based on my experience preparing for the exam, these are some of the areas that I would recommend any reader to practice,</p>
+<ol>
+<li><a href="https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/"  class="external-link" target="_blank" rel="noopener">ETCD Backup and Restore</a></li>
+<li><a href="https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/"  class="external-link" target="_blank" rel="noopener">Cluster Upgrade</a></li>
+<li><a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/"  class="external-link" target="_blank" rel="noopener">Working with PV and PVC</a></li>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/network-policies/"  class="external-link" target="_blank" rel="noopener">Network Policies</a></li>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/ingress/"  class="external-link" target="_blank" rel="noopener">Ingress</a></li>
+<li><a href="https://kubernetes.io/docs/reference/kubectl/quick-reference/"  class="external-link" target="_blank" rel="noopener">Jsonpath and Custom columns</a></li>
+<li><a href="https://kubernetes.io/docs/reference/kubectl/generated/kubectl_top/"  class="external-link" target="_blank" rel="noopener">Monitoring and Logging Pods and nodes</a></li>
+<li><a href="https://kubernetes.io/docs/reference/access-authn-authz/authorization/"  class="external-link" target="_blank" rel="noopener">Service Accounts, Roles and Role Bindings</a></li>
+</ol>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2021 -
+    
+    2024
+     Balakrishnan Vasudevan 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SP2Q8ZR43M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SP2Q8ZR43M');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

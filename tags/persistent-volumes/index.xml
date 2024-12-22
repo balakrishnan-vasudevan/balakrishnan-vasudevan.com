@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/tags/persistent-volumes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resizing StatefulSet PVs Without Downtime in Production</title>
-      <link>http://www.bala-krishnan.com/posts/sts-resizing/</link>
+      <link>http://www.bala-krishnan.com/posts/16-sts-resizing/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bala-krishnan.com/posts/sts-resizing/</guid>
+      <guid>http://www.bala-krishnan.com/posts/16-sts-resizing/</guid>
       <description>Recently, I worked on resizing a statefulset. One of our workloads was constantly restarting due to the disk space filling up. The process of resizing the persistent volume of a statefulset is straightforward. You scale down the statefulset, modify the size of the underlying PVC, and then scale up the statefulset however, in this case, there were multiple complications and constraints. To begin with, our PVCs were configured to be deleted when they were not bound to any pod.</description>
     </item>
     

@@ -14,7 +14,7 @@
     <loc>http://www.bala-krishnan.com/posts/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/sts-resizing/</loc>
+    <loc>http://www.bala-krishnan.com/posts/16-sts-resizing/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/statefulset/</loc>
@@ -26,16 +26,16 @@
     <loc>http://www.bala-krishnan.com/tags/cka/</loc>
     <lastmod>2024-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/cka/</loc>
+    <loc>http://www.bala-krishnan.com/posts/15-cka/</loc>
     <lastmod>2024-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/books/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/what-i-read-2024/</loc>
+    <loc>http://www.bala-krishnan.com/posts/14-what-i-read-2024/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/tier-1-outage/</loc>
+    <loc>http://www.bala-krishnan.com/posts/13-tier-1-outage/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/gcp/</loc>
@@ -47,7 +47,7 @@
     <loc>http://www.bala-krishnan.com/tags/sre/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/tracing/</loc>
+    <loc>http://www.bala-krishnan.com/posts/12-tracing/</loc>
     <lastmod>2024-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/tracing/</loc>
@@ -56,7 +56,7 @@
     <loc>http://www.bala-krishnan.com/tags/distributed-systems/</loc>
     <lastmod>2024-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/exploring-distributed-systems/</loc>
+    <loc>http://www.bala-krishnan.com/posts/11-exploring-distributed-systems/</loc>
     <lastmod>2024-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/interviews/</loc>
@@ -68,19 +68,19 @@
     <loc>http://www.bala-krishnan.com/tags/systems/</loc>
     <lastmod>2024-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/command-line-interviews/</loc>
+    <loc>http://www.bala-krishnan.com/posts/10-command-line-interviews/</loc>
     <lastmod>2024-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/opa/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/opa/</loc>
+    <loc>http://www.bala-krishnan.com/posts/9-opa/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/alerts/</loc>
     <lastmod>2024-01-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/stats-behind-alerts/</loc>
+    <loc>http://www.bala-krishnan.com/posts/8-stats-behind-alerts/</loc>
     <lastmod>2024-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/statistics/</loc>
@@ -92,7 +92,7 @@
     <loc>http://www.bala-krishnan.com/tags/chennai/</loc>
     <lastmod>2024-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/historical-coincidence/</loc>
+    <loc>http://www.bala-krishnan.com/posts/7-historical-coincidence/</loc>
     <lastmod>2024-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/history/</loc>
@@ -101,10 +101,10 @@
     <loc>http://www.bala-krishnan.com/tags/santa-barbara/</loc>
     <lastmod>2024-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/sre-interviews/</loc>
+    <loc>http://www.bala-krishnan.com/posts/6-sre-interviews/</loc>
     <lastmod>2024-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/google-sre-onsite/</loc>
+    <loc>http://www.bala-krishnan.com/posts/5-google-sre-onsite/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/google-sre/</loc>
@@ -119,10 +119,10 @@
     <loc>http://www.bala-krishnan.com/tags/shortcodes/</loc>
     <lastmod>2023-01-04T11:51:36+01:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/google-tech-screen/</loc>
+    <loc>http://www.bala-krishnan.com/posts/4-google-tech-screen/</loc>
     <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/google-sre-interview/</loc>
+    <loc>http://www.bala-krishnan.com/posts/3-google-sre-interview/</loc>
     <lastmod>2022-06-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/2021/</loc>
@@ -131,10 +131,10 @@
     <loc>http://www.bala-krishnan.com/tags/review/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/2021-review/</loc>
+    <loc>http://www.bala-krishnan.com/posts/2-2021-review/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/2022-to-do/</loc>
+    <loc>http://www.bala-krishnan.com/posts/1-2022-to-do/</loc>
     <lastmod>2021-12-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/authors/</loc>
