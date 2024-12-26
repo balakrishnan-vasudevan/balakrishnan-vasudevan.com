@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://www.bala-krishnan.com/tags/cors/</loc>
+    <lastmod>2024-12-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/17-cors/</loc>
+    <lastmod>2024-12-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.bala-krishnan.com/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/istio/</loc>
+    <lastmod>2024-12-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/</loc>
+    <lastmod>2024-12-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/</loc>
+    <lastmod>2024-12-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/kubernetes/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
@@ -11,16 +26,10 @@
     <loc>http://www.bala-krishnan.com/tags/persistent-volumes/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.bala-krishnan.com/posts/16-sts-resizing/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/statefulset/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.bala-krishnan.com/tags/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/cka/</loc>

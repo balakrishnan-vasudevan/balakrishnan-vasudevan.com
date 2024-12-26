@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CORS or How a Bouncer Keeps Your Website Safe</title>
+      <link>http://www.bala-krishnan.com/posts/17-cors/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/17-cors/</guid>
+      <description>In the past few months, I have been working on migrating microservices hosted in Azure’s CSP to the EA platform. Some of the changes my team has been making to the microservice manifests include standardizing naming, adding resiliency, improving observability, and hardening security by widely using sealed secrets. We use the Istio Service Mesh to provide a network overlay for managing traffic, security, observability, and more for our services. We use Istio to control outbound access to services from our cluster, add detailed tracing and metrics data to our observability stack, and provide routing and TLS customization for a variety of workloads.</description>
+    </item>
+    
     <item>
       <title>Resizing StatefulSet PVs Without Downtime in Production</title>
       <link>http://www.bala-krishnan.com/posts/16-sts-resizing/</link>
