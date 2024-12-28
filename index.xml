@@ -6,11 +6,21 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://www.bala-krishnan.com/about/</link>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/about/</guid>
+      <description>Hi! I&amp;rsquo;m Bala. This blog is a collection of my ramblings on systems, site reliability, and my life in general. I am a Platform Engineer with Oak Street Health. Previously, I worked on SRE, Platform Engineering, and Web Operations at Rad AI, Salesforce, Shape Security (acquired by F5 Networks), Appfolio, and Ericsson.
+I live in Colorado with my wife and our goldendoodle Maui. I love to cook, experiment with espresso, read espionage fiction or history, travel, and stare at any plane that goes overhead.</description>
+    </item>
+    
     <item>
       <title>Meta - Production Engineer Interview Experience</title>
       <link>http://www.bala-krishnan.com/posts/18-meta/</link>
-      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>http://www.bala-krishnan.com/posts/18-meta/</guid>
       <description>In this post, I’ll share my experience interviewing for the Production Engineer role at Meta. Production Engineering at Meta is similar to the Site Reliability Engineer (SRE) role at other companies. My journey included preparation, multiple screening rounds, and the onsite interview process.
@@ -110,16 +120,6 @@ While there exists an abundance of resources on distributed systems—ranging fr
 Thanks to Dave for his clear explanation of the various concepts.
 Here are my notes on the video:
 Mean vs Median vs Mode - Mean = Measure of central tendency, the average value Median - In a sorted data set, median is the middle value Mode - Mode is the frequently used value in a dataset Arithmetic mean - Not the 50% mark.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://www.bala-krishnan.com/about/</link>
-      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.bala-krishnan.com/about/</guid>
-      <description>Hi! I&amp;rsquo;m Bala. This blog is a collection of my ramblings on systems, site reliability, and my life in general. I am a Platform Engineer with Oak Street Health. Previously, I worked on SRE, Platform Engineering, and Web Operations at Rad AI, Salesforce, Shape Security (acquired by F5 Networks), Appfolio, and Ericsson.
-I live in Colorado with my wife and our goldendoodle Maui. I love to cook, experiment with espresso, read espionage fiction or history, travel, and stare at any plane that goes overhead.</description>
     </item>
     
     <item>

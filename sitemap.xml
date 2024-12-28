@@ -2,29 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://www.bala-krishnan.com/about/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.bala-krishnan.com/</loc>
-    <lastmod>2024-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/interviews/</loc>
-    <lastmod>2024-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/meta/</loc>
-    <lastmod>2024-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/posts/18-meta/</loc>
-    <lastmod>2024-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/meta-production-engineering/</loc>
-    <lastmod>2024-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/posts/</loc>
-    <lastmod>2024-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/production-engineering/</loc>
-    <lastmod>2024-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/</loc>
-    <lastmod>2024-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/cors/</loc>
     <lastmod>2024-12-26T00:00:00+00:00</lastmod>
@@ -106,9 +109,6 @@
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/statistics/</loc>
     <lastmod>2024-01-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.bala-krishnan.com/about/</loc>
-    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/chennai/</loc>
     <lastmod>2024-01-14T00:00:00+00:00</lastmod>
