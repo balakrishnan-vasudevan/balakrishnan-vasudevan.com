@@ -2,10 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.bala-krishnan.com/about/</loc>
-    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.bala-krishnan.com/</loc>
+    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/</loc>
+    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/sla/</loc>
+    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/sli/</loc>
+    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/posts/19-sli-slo-sla/</loc>
+    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/slo/</loc>
+    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/sre/</loc>
+    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/tags/</loc>
+    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.bala-krishnan.com/about/</loc>
     <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/interviews/</loc>
@@ -20,13 +41,7 @@
     <loc>http://www.bala-krishnan.com/tags/meta-production-engineering/</loc>
     <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.bala-krishnan.com/posts/</loc>
-    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.bala-krishnan.com/tags/production-engineering/</loc>
-    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.bala-krishnan.com/tags/</loc>
     <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/cors/</loc>
@@ -69,9 +84,6 @@
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/tags/networking/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.bala-krishnan.com/tags/sre/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.bala-krishnan.com/posts/12-tracing/</loc>

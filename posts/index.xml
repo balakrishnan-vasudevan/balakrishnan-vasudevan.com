@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://www.bala-krishnan.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SLI, SLO, SLA, Error Budget - A Primer</title>
+      <link>http://www.bala-krishnan.com/posts/19-sli-slo-sla/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bala-krishnan.com/posts/19-sli-slo-sla/</guid>
+      <description>I was once asked what in my opinion reliability of a distributed system was. My answer was a hodgepodge of various terms explaining that reliability is the ability of a system to not fail/withstand failures to some extent and still continue to serve traffic. As I gain more experience working with distributed systems, I&amp;rsquo;ve come to realize that reliability is a conversation. It is a conversation operators have with the systems, the underlying infrastructure, and the various services as we operate them and as we have them serve customers.</description>
+    </item>
+    
     <item>
       <title>Meta - Production Engineer Interview Experience</title>
       <link>http://www.bala-krishnan.com/posts/18-meta/</link>
