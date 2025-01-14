@@ -177,8 +177,8 @@
 
       <div class="post-content">
         
-        <p>I was once asked what in my opinion reliability of a distributed system was. My answer was a hodgepodge of various terms explaining that reliability is the ability of a system to not fail/withstand failures to some extent and still continue to serve traffic. As I gain more experience working with distributed systems, I&rsquo;ve come to realize that reliability is a conversation. It is a conversation operators have with the systems, the underlying infrastructure, and the various services as we operate them and as we have them serve customers. Reliability is also a conversation that SREs and product/development teams have in order to make sure that we can build a product that meets our requirements.</p>
-<p>SLIs and SLOs help quantize reliability and help with communicating reliability to others.</p>
+        <p>I was once asked what in my opinion reliability of a distributed system was. My answer was a hodgepodge of various terms explaining that reliability is the ability of a system to not fail/withstand failures to some extent and continue to serve traffic. As I gain more experience working with distributed systems, I&rsquo;ve come to realize that reliability is a conversation. It is a conversation operators have with the systems, the underlying infrastructure, and the various services as we operate them and as we have them serve customers. Reliability is also a conversation that SREs and product/development teams have to make sure that we can build a product that meets our requirements.</p>
+<p>SLIs and SLOs help quantify reliability and help with communicating reliability to others.</p>
 <ul>
 <li>SLI - Service Level Indicator</li>
 <li>SLO - Service Level Objective</li>
@@ -193,10 +193,10 @@
 </h2>
 <p>An SLI is a metric that tells us what is being measured for a service. Examples could be the following,</p>
 <ul>
-<li><strong>Response time</strong> - the amount of time it takes between sending a request and getting a response</li>
-<li><strong>Throughput</strong> - max number of requests the system needs to handle</li>
-<li><strong>Error rate</strong> - ratio of failed requests to successful requests</li>
-<li><strong>Availability</strong>  - fraction of the time that a service is usable.</li>
+<li><strong>Response time</strong> - the amount of time it takes between sending a request and getting a response</li>
+<li><strong>Throughput</strong> - max number of requests the system needs to handle</li>
+<li><strong>Error rate</strong> - ratio of failed requests to successful requests</li>
+<li><strong>Availability</strong> - a fraction of the time a service is usable.</li>
 </ul>
 <p>An ideal SLI reflects the end user’s perspective.</p>
 <h2 id="slo">
@@ -208,8 +208,8 @@
 </h2>
 <p>An SLO is a target value or range of values for a service level that is measured by an SLI. Therefore, a natural structure for SLOs is thus SLI ≤ target, or lower bound ≤ SLI ≤ upper bound. To further simplify, SLO = SLI + Thresholds. For example,</p>
 <ul>
-<li>Setting availability SLO to a threshold of 99.9% means that the service will be down for no more than 1 hr/month.</li>
-<li>Setting error rate SLO to &lt;1% means that, averaged over a period of time, error rate for service will be less than 1%.</li>
+<li>Setting availability SLO to a threshold of 99.9% means the service will be down for no more than 1 hr/month.</li>
+<li>Setting the error rate SLO to &lt;1% means that averaged over a period of time, the error rate for service will be less than 1%.</li>
 </ul>
 <p>The SLO is the “proper level of reliability” targeted by the service.</p>
 <h2 id="sla">
