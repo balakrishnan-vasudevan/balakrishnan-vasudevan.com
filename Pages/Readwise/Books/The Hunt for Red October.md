@@ -1,0 +1,16 @@
+# The Hunt for Red October
+
+![rw-book-cover](https://images-na.ssl-images-amazon.com/images/I/51I8FiJ4lLL._SL200_.jpg)
+
+## Metadata
+- Author: [[Tom Clancy]]
+- Full Title: The Hunt for Red October
+- Category: #books
+
+## Highlights
+- Captain First Rank Marko Ramius of the Soviet Navy was dressed for the Arctic conditions normal to the Northern Fleet submarine base at Polyarnyy. Five layers of wool and oilskin enclosed him. A dirty harbor tug pushed his submarine’s bow around to the north, facing down the channel. The dock that had held his Red October for two interminable months was now a water-filled concrete box, one of the many specially built to shelter strategic missile submarines from the harsh elements. On its edge a collection of sailors and dockyard workers watched his ship sail in stolid Russian fashion, without a wave or a cheer. “Engines ahead slow, Kamarov,” he ordered. The tug slid out of the way, and Ramius glanced aft to see the water stirring from the force of the twin bronze propellers. The tug’s commander waved. Ramius returned the gesture. The tug had done a simple job, but done it quickly and well. The Red October, a Typhoon-class sub, moved under her own power towards the main ship channel of the Kola Fjord. ([Location 109](https://readwise.io/to_kindle?action=open&asin=B001PSEPLG&location=109))
+    - Tags: [[blue]] 
+- preparation, knowledge, and discipline can deal with any form of danger; that danger confronted properly is not something a man must fear. ([Location 657](https://readwise.io/to_kindle?action=open&asin=B001PSEPLG&location=657))
+- “When you have a propeller turning in the water at high speed, you develop an area of low pressure behind the trailing edge of the blade. This can cause water to vaporize. That creates a bunch of little bubbles. They can’t last long under the water pressure, and when they collapse the water rushes forward to pound against the blades. That does three things. First, it makes noise, and us sub drivers hate noise. Second, it can cause vibration, something else we don’t like. The old passenger liners, for example, used to flutter several inches at the stern, all from cavitation and slippage. It takes a hell of a lot of force to vibrate a 50,000-ton ship; that kind of force breaks things. Third, it tears up the screws. The big wheels only used to last a few years. That’s why back in the old days the blades were bolted onto the hub instead of being cast in one piece. The vibration is mainly a surface ship problem, and the screw degradation was eventually conquered by improved metallurgical technology. ([Location 1057](https://readwise.io/to_kindle?action=open&asin=B001PSEPLG&location=1057))
+- For most people this would have been a month’s work. He’d done it in four days, working almost around the clock not only because the money was an attractive incentive but also because the project was a professional challenge. He ended the job quietly satisfied that he could still meet an impossible deadline with time to spare. ([Location 3091](https://readwise.io/to_kindle?action=open&asin=B001PSEPLG&location=3091))
+- He was the sort who could focus his whole mind on a single problem. ([Location 3133](https://readwise.io/to_kindle?action=open&asin=B001PSEPLG&location=3133))

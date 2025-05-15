@@ -1,0 +1,49 @@
+- Beyond five 9s: Lessons from our highest available data planes:
+- [https://aws.amazon.com/builders-library/beyond-five-9s-lessons-from-our-highest-available-data-planes/](https://aws.amazon.com/builders-library/beyond-five-9s-lessons-from-our-highest-available-data-planes/)
+- Minimizing correlated failures in distributed systems:
+- [https://aws.amazon.com/builders-library/minimizing-correlated-failures-in-distributed-systems/](https://aws.amazon.com/builders-library/minimizing-correlated-failures-in-distributed-systems/)
+- Making retries safe with idempotent APIs:
+- [https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/?did=ba_card&trk=ba_card](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/?did=ba_card&trk=ba_card)
+- Hands-off: Automating continuous delivery pipelines at Amazon:
+- [https://aws.amazon.com/builders-library/automating-continuous-delivery-pipelines-at-amazon/](https://aws.amazon.com/builders-library/automating-continuous-delivery-pipelines-at-amazon/)
+- Fairness in multi-tenant systems:
+- [https://aws.amazon.com/builders-library/fairness-in-multi-tenant-systems/?did=ba_card&trk=ba_card](https://aws.amazon.com/builders-library/fairness-in-multi-tenant-systems/?did=ba_card&trk=ba_card)
+- Avoiding overload in distributed systems by putting the smaller service in control:
+- [https://aws.amazon.com/builders-library/avoiding-overload-in-distributed-systems-by-putting-the-smaller-service-in-control/](https://aws.amazon.com/builders-library/avoiding-overload-in-distributed-systems-by-putting-the-smaller-service-in-control/)
+- Instrumenting distributed systems for operational visibility:
+- [https://aws.amazon.com/builders-library/instrumenting-distributed-systems-for-operational-visibility/?did=ba_card&trk=ba_card](https://aws.amazon.com/builders-library/instrumenting-distributed-systems-for-operational-visibility/?did=ba_card&trk=ba_card)
+- Leader election in distributed systems:
+- [https://aws.amazon.com/builders-library/leader-election-in-distributed-systems/](https://aws.amazon.com/builders-library/leader-election-in-distributed-systems/)
+- Dependency isolation to contain concurrency overload:
+- [https://aws.amazon.com/builders-library/dependency-isolation/](https://aws.amazon.com/builders-library/dependency-isolation/)
+- Timeouts, retries and backoff with jitter:
+- [https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter)
+- Architecting and operating resilient serverless systems at scale:
+- [https://aws.amazon.com/builders-library/architecting-and-operating-resilient-serverless-systems-at-scale/?did=ba_card&trk=ba_card](https://aws.amazon.com/builders-library/architecting-and-operating-resilient-serverless-systems-at-scale/?did=ba_card&trk=ba_card)
+- Workload isolation using shuffle-sharding:
+- [https://aws.amazon.com/builders-library/workload-isolation-using-shuffle-sharding/?did=ba_card&trk=ba_card](https://aws.amazon.com/builders-library/workload-isolation-using-shuffle-sharding/?did=ba_card&trk=ba_card)
+- Amazon's approach to high-availability deployment:
+- [https://aws.amazon.com/builders-library/amazon-approach-to-high-availability-deployment/?did=ba_card&trk=ba_card](https://aws.amazon.com/builders-library/amazon-approach-to-high-availability-deployment/?did=ba_card&trk=ba_card)
+- Caching challenges and strategies:
+- [https://aws.amazon.com/builders-library/caching-challenges-and-strategies/?did=ba_card&trk=ba_card](https://aws.amazon.com/builders-library/caching-challenges-and-strategies/?did=ba_card&trk=ba_card)
+- Challenges with distributed systems
+- https://aws.amazon.com/builders-library/challenges-with-distributed-systems?did=ba_card&trk=ba_card
+- Static stability using availability zones
+- https://aws.amazon.com/builders-library/static-stability-using-availability-zones?did=ba_card&trk=ba_card
+- Avoiding insurmountable queue backlogs
+- https://aws.amazon.com/builders-library/avoiding-insurmountable-queue-backlogs?did=ba_card&trk=ba_card
+- Architecting and operating resilient serverless systems at scale
+- https://aws.amazon.com/builders-library/architecting-and-operating-resilient-serverless-systems-at-scale/?did=ba_card&trk=ba_card
+- Using load shedding to avoid overload
+- https://aws.amazon.com/builders-library/using-load-shedding-to-avoid-overload?did=ba_card&trk=ba_card
+- Reliability, constant work, and a good cup of coffee
+- https://aws.amazon.com/builders-library/reliability-and-constant-work?did=ba_card&trk=ba_card
+- Resilience lessons from the lunch rush
+- https://aws.amazon.com/builders-library/resilience-lessons-from-the-lunch-rush/
+- Using dependency isolation to contain concurrency overload
+- https://aws.amazon.com/builders-library/dependency-isolation/
+-
+-
+-
+- [[Notes/Pages/AWS/AWS Networking]]
+-

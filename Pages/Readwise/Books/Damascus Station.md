@@ -1,0 +1,12 @@
+# Damascus Station
+
+![rw-book-cover](https://m.media-amazon.com/images/I/816tflIq3iL._SY160.jpg)
+
+## Metadata
+- Author: [[David McCloskey]]
+- Full Title: Damascus Station
+- Category: #books
+
+## Highlights
+- THE EARLY YEARS OF THE SYRIAN UPRISING Eight hours into his surveillance detection route Sam’s grip on the steering wheel loosened and his pulse began to slow. He’d made three stops in and around Damascus and executed the planned turns on the SDR, each time scanning for watchers, his eyes darting between the mirrors. At each stop he’d lingered, trying to draw out opposition surveillance. The heat burned through the windshield and the air conditioner struggled to keep up. His back hurt, and his shoulders felt permanently hunched over. He hit traffic and idled the car in an intersection mercifully shaded by palm and pine. Sam drummed his fingers on the wheel and checked the mirrors as the light lingered red, comparing each vehicle to a mental catalog of the cars he had seen earlier in the day. The light turned green. A mukhabarat officer in a leather jacket marched into the road with his hand up and gestured for the first car in line to stay in place. A car behind him honked. Another mukhabarat officer now dragged into the road a sawhorse emblazoned with stickers of President Bashar al-Assad and waved the first car forward. Someone yelled that it was a checkpoint. Though it was the sixth of the day, Sam’s heartbeat picked up again. Nonofficial cover meant everything was on the line. There would be no diplomatic immunity if he was caught. There would be no trade. He would disappear into a basement prison. If you weren’t twitchy driving in a hostile country with no lifeline, you were probably a sociopath. He slid the passport from his breast pocket and placed it on the dashboard. The document was Canadian, dark blue (tourist), and included a picture of a man named James Hansen. The photo was Sam’s, as was the birthday. He’d collected the document from the Canadian Security Intelligence Service on a slushy spring day in Ottawa after touring the office spaces of the recently established yet nonexistent Orion Real Estate Investments, LLC. The cover was fully backstopped—humans would answer the phones and respond to emails—the Canadians only too happy to participate in exchange for a seat at the debriefing table once KOMODO was safe at Langley. For even friendly intelligence services do not share, they trade. ([Location 12](https://readwise.io/to_kindle?action=open&asin=B08X8V2V7Y&location=12))
+    - Tags: [[blue]] 

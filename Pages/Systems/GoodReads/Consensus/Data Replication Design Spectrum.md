@@ -1,0 +1,27 @@
+
+| System          | Replication Algorithm Family | Note                                                                                                                                                  |
+| --------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| MongoDB         | Leaders                      | Based on Raft, per [docs](https://www.mongodb.com/docs/manual/core/replica-set-elections/).                                                           |
+| Redis Cluster   | Leaders                      | Per [docs](https://redis.io/docs/latest/operate/oss_and_stack/reference/cluster-spec/).                                                               |
+| Elasticsearch   | Reconfiguration              | Based off of PacificA per [docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-replication.html#_introduction).                |
+| Cassandra       | Quorums                      | Majority quorum for most operations. LWT/Accord is leaderless consensus.                                                                              |
+| Neo4j           | Leaders                      | Raft, per [docs](https://neo4j.com/docs/operations-manual/current/clustering/introduction/#clustering-primary-mode).                                  |
+| InfluxDB        | Reconfiguration              | Meta nodes run Raft. Data nodes host data. Per [docs](https://www.influxdata.com/blog/influxdb-clustering/).                                          |
+| CockroachDB     | Leaders                      | Per [docs](https://www.cockroachlabs.com/docs/stable/architecture/replication-layer).                                                                 |
+| Aerospike       | Reconfiguration              | Per [docs](https://aerospike.com/docs/server/architecture/data-distribution).                                                                         |
+| Hazelcast       | Leaders                      | For its CP subsystem. Per [docs](https://docs.hazelcast.com/imdg/4.2/consistency-and-replication/replication-algorithm).                              |
+| Singlestore     | Reconfiguration              | Aggregators use Raft. Leaf nodes store data. Per [docs](https://docs.singlestore.com/db/v7.5/introduction/faqs/clustering/).                          |
+| TiKV            | Leaders                      | Per [docs](https://docs.pingcap.com/tidb/stable/tidb-storage).                                                                                        |
+| ScyllaDB        | Quorums                      | Per [docs](https://opensource.docs.scylladb.com/stable/cql/consistency.html).                                                                         |
+| Riak KV         | Quorums                      | Per [docs](https://docs.riak.com/riak/kv/latest/developing/app-guide/replication-properties/index.html).                                              |
+| ArangoDB        | Reconfiguration              | [Agents](https://docs.arangodb.com/3.11/deploy/cluster/#agents) serve as the consensus service, DB-Servers do synchronous replication within a shard. |
+| GraphDB         | Leaders                      | Raft, per [docs](https://graphdb.ontotext.com/documentation/10.0/cluster-basics.html).                                                                |
+| Memgraph        | Leaders                      | If I’ve understood the [docs](https://memgraph.com/docs/clustering/high-availability) right?                                                          |
+| YugabyteDB      | Leaders                      | Per [docs](https://docs.yugabyte.com/preview/architecture/docdb-replication/raft/).                                                                   |
+| DGraph          | Leaders                      | Per [docs](https://dgraph.io/docs/design-concepts/raft/).                                                                                             |
+| FoundationDB    | Reconfiguration              | Per [docs](https://apple.github.io/foundationdb/architecture.html).                                                                                   |
+| Apache Kudu     | Leaders                      | Per [docs](https://kudu.apache.org/docs/#raft).                                                                                                       |
+| Google Spanner  | Leaders                      | Per [docs](https://cloud.google.com/spanner/docs/replication).                                                                                        |
+| Azure CosmosDB  | Leaders                      | Per [docs](https://learn.microsoft.com/en-us/azure/cosmos-db/global-dist-under-the-hood), but they’re very not open about it.                         |
+| Alibaba PolarDB | Leaders                      | Per [docs](https://www.alibabacloud.com/help/en/polardb/polardb-for-postgresql/architecture-2).                                                       |
+| Amazon DynamoDB | Leaders                      | Per [paper](https://www.usenix.org/system/files/atc22-elhemali.pdf).                                                                                  |

@@ -1,0 +1,33 @@
+- Vertical vs Horizontal scaling - how to scale up system, more resources (vertical) vs more hosts (horizontal)
+- CAP - In the event of n/w partition, do you want consistency or availability?
+- ACID vs BASE - Atomicity, Consistency, Isolation, Durability (relational DBs) vs Basically available soft state eventual consistency (used in No SQL DBs)
+- Partitioning/Sharding Data - 
+- Consistent hashing - Why?
+- Optimistic vs Pessimistic locking - Check to see when you are ready to commit, Pessimistic - acquire locks before committing 
+- Strong vs Eventual Consistency - Strong = reads will see latest writes, Eventual = Reads will see some writes, higher availability 
+- Relational DB vs No SQL - 
+- Types of No SQL
+	- Key value - Simplest kind
+	- Wide column - a row can have many different kinds and many columns
+	- Document based - semi-structured data (XML or JSON)
+	- Graph based - entities with relations
+- Caching - speed up requests, every node has a cache vs central cache, cache cannot be source of truth, eviction policies
+- DC / Racks / Hosts  - How DCs are run?
+- CPU/Memory/hard drive/ NW BW  - All of these are limited resources
+- Random vs Sequential read/write on disk - Disk writing is usually slow, sequential is faster
+- HTTP vs HTTP2 vs Websockets - HTTP= request/reply architecture, HTTP2 handles multiple requests over a single socket, Websockets = bidirectional communication b/w client and server
+- TCP/IP model - 4 layers
+- IPv4 vs IPv6 - 32 bit vs 128 bit addresses, NAT, private IP blocks, how routing works
+- TCP vs UDP - connection oriented, reliable vs unreliable
+- DNS lookup - DNS record types, DNS servers
+- HTTPS and TLS - TLS = Transport Layer Security, HTTP+TLS = HTTPS
+- PKI and CA = Public key and digital certs, CA = trusted entity that tells if public key is from correct party
+- Symmetric vs Asymmetric key - Asymmetric is computationally expensive, so should be used for small amounts of data (Public - pvt key encryption), Symmetric = AES
+- LB - L4 vs L7 - Delegate requests to nodes, LB algorithms, L4 = IP addresses and port numbers used, L7 = HTTP URI is used, mostly L7
+- CDNs and Edge - CDN caches data close to user, Edge = Computing done close to user, edge has dedicated connection to DC instead of going through public internet
+- Bloom filters and count-min sketch - Bloom filter can help to see if 
+- Paxos - leader election
+- Design patterns and OO design
+- Pub/Sub vs Queue - Pub/sub when there is a need for multiple entities to subscribe to receive data. Much easier to architect it, there is data who ever wants to can read it. Queue when the relationship between two entities is one to one. That's why it's a queue. Imagine going to a supermarket and having two checkouts for your whole basket running in parallel, scanning your items from the same belt, could be faster to process the queue (belt) but you may still be delaying the people behind since now you have to pack at twice the speed and you have to make two separate payments. If you have a situation where there are multiple entities, where 1 writes to the queue and multiple entities read, you would have to find away to determine that an item from the queue can only be removed when all entities have read that particular item. If another entity is added or removed it may have to force a code change.
+- Map reduce
+- Multi-threading, Concurrency, locks, synchronization, CAS

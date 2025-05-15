@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "874cae47a19f04c1",
+    "type": "split",
+    "children": [
+      {
+        "id": "a34a354d916a4184",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad47f55c3a345be3",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4390ef0aa862d891",
+    "type": "split",
+    "children": [
+      {
+        "id": "2441380565c481c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef36c6d3a1b34883",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f78f9f442b718966",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "SLO",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5e90d5f2607afdc1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 278.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "c906fdb10e22f2a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "795df2f301172e25",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6614a0b4b94a5153",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "f9f7ec58ab1fbf30",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "f3fd1b82c7856cc8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "010ed5da89bce389",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "ad47f55c3a345be3",
+  "lastOpenFiles": [
+    "Systems Design/Framework/12-Distributed coordination services.md",
+    "Systems Design/Practical Systems/Dropbox/Caching at Dropbox.md",
+    "Systems Design/Framework/14-Full-text search.md",
+    "Systems Design/Practical Systems/Pending/Deleting data distributed throughout your microservices architecture.md",
+    "Systems Design/Framework/Add Ons/Consensus Algorithms.md",
+    "Systems Design/Framework/3-API GW.md",
+    "Systems Design/Practical Systems/Netflix/Netflix.md",
+    "Systems Design/Framework/Scaling/Scaling Users.md",
+    "Systems Design/Framework/Add Ons/Unique ID Generator.md",
+    "Systems Design/Practical Systems/How S3 works.md",
+    "Systems Design/Framework/Rate Limiting.md",
+    "Systems Design/Framework/Add Ons/Gossip Protocols.md",
+    "Systems Design/Framework/Add Ons/Observability/SLI, SLO, SLA.md",
+    "Systems Design/Concepts.md",
+    "Systems Design/Practice/Systems Design practice.md",
+    "Systems Design/Systems.md",
+    "Systems Design/Fundamentals/What happens when.md",
+    "Systems Design/Framework/System Observability.md",
+    "Systems Design/Framework/Template.md",
+    "Systems Design/Framework/Types of APIs.md",
+    "Systems Design/Framework/Zookeeper.md",
+    "Systems Design/Framework/18-Distributed Messaging queues.md",
+    "Systems Design/Framework/17-Batch Processing.md",
+    "Systems Design/Framework/16-Unstructured Data Storage.md",
+    "Systems Design/Framework/15-Storage.md",
+    "Systems Design/Framework/13-Notification System.md",
+    "Systems Design/Framework/Add Ons/Resilience",
+    "Systems Design/Framework/Authentication",
+    "Systems Design/Framework/Add Ons",
+    "Screenshot 2024-06-20 at 9.43.57 AM.png",
+    "Screenshot 2024-06-17 at 9.18.59 AM.png",
+    "Screenshot 2024-05-07 at 9.12.10 PM.png",
+    "Screenshot 2024-05-07 at 9.11.47 PM.png",
+    "Screenshot 2024-05-06 at 1.56.12 PM.png",
+    "Pasted image 20240507202705.png",
+    "Pasted image 20240506214044.png",
+    "Systems Design/Images/Pasted image 20240624050025.png",
+    "Systems Design/Framework"
+  ]
+}

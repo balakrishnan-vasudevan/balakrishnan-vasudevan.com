@@ -1,0 +1,1 @@
+Columnar databases like Apache Parquet or Apache ORC store data in column-oriented format, which can offer significant performance benefits for analytical workloads, though they may not be suitable for all use cases where SSTables are used.

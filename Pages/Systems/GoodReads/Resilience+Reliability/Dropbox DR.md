@@ -1,0 +1,19 @@
+#dr, #reliability
+
+Recovery Time Objective (RTO). RTO measures the amount of time we promise it will take to recover from a catastrophic event.
+Dropbox has two core serving stacks: one for block (file) data, and one for metadata. As many avid Dropbox tech blog readers may be aware, [Magic Pocket is our solution for block storage](https://dropbox.tech/infrastructure/inside-the-magic-pocket), and was designed with a multi-homed approach to reliability. When a service is multi-homed, it means that, by design, the service can be run from more than one data center.
+
+Magic Pocket is also what we call an active-active system. This means, in addition to being multi-homed, it was designed to serve block data from multiple data centers independently at the same time. Its design includes built-in replication and redundancies to ensure a region failure is minimally disruptive to our business. This type of architecture is resilient in disaster scenarios because, from the user’s perspective, it is able to transparently withstand the loss of a data center. After Magic Pocket was implemented, Dropbox embarked on a three-phase plan to make the metadata stack more resilient, with a goal of eventually achieving an active-active architecture here, too.
+
+Messy metadata:
+The metadata stack is built on top of two large, sharded MySQL deployments. One is for general metadata using our in-house database [Edgestore](https://dropbox.tech/infrastructure/reintroducing-edgestore), and the other for filesystem metadata. Each shard in a cluster is allocated to six physical machines: one primary and two replicas in each of our core regions.
+
+![](https://dropbox.tech/cms/content/dam/dropbox/tech-blog/en-us/2022/04/disaster-readiness/Diagram%202_@2x.png/_jcr_content/renditions/Diagram%202_@2x.webp)
+
+two tradeoffs:
+1. We use [s](https://dev.mysql.com/doc/refman/5.7/en/replication-semisync.html)[emisynchronous replication](https://dev.mysql.com/doc/refman/5.7/en/replication-semisync.html) to balance data integrity and write latency. However, because of that choice, replication between regions is asynchronous—meaning the remote replicas are always some number of transactions behind the primary region. This replication lag makes it very hard to handle a sudden and complete failure of the primary region. Given this context, we structured our RTO—and more broadly, our disaster readiness plans—around imminent failures where our primary region is still up, but may not be for long. We felt comfortable with this trade-off because our data centers have many redundant power and networking systems that are frequently tested.
+2. We run MySQL in [r](https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html#isolevel_read-committed)[ead](https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html#isolevel_read-committed) [c](https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html#isolevel_read-committed)[ommitted](https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html#isolevel_read-committed) isolation mode. This strong consistency makes it easy for our developers to work with data, but it also limits the ways we can scale our databases. A common way to scale is to introduce caches that alter the overall consistency guarantees, but increase read throughput. In our case, while we’ve built out a cache layer, it was still designed to be strongly consistent with the database. This decision complicated the design, and put restrictions on how far away from the databases caches can be.
+3. Edgestore is a large multi-tenant graph database used for many different purposes, data ownership isn't always straightforward. This complex ownership model made it hard to move just a subset of user data to another region.
+
+Implemented over 3 phases:
+Phase 1: Make changes to move metadata from current active to passive. Failover

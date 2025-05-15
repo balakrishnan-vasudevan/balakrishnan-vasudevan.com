@@ -1,0 +1,64 @@
+# Seeing Like an SRE: Site Reliability Engineering as High Modernism
+
+Tags: sre
+Category: Articles
+Company: general
+Status: Not started
+URL: https://www.usenix.org/publications/loginonline/seeing-sre-site-reliability-engineering-high-modernism
+
+I recently spent some time trying to write a set of general guidelines for what to monitor in a software system. I came up with this list:
+- Latency distribution and successful/unsuccessful request counts (plus error types) for all RPCs served.
+- Latency distribution and success rate for all other services depended on, as well as circuit breakers tripping.
+- Monitor the last success time for anything that’s supposed to happen periodically.
+- Percentage utilisation for resources (quotas, rate limits, physical and logical system resources), as well as saturation signals for the same, and errors or timeouts.
+- How many instances are up and healthy/unhealthy, restarts, running versions of binaries.
+- System invariants: other properties of your specific system. For instance, the count of leaders for a leader-elected system (expected to be one - you want to know if it isn’t). Other examples could include the number of replicas of parts of a replicated dataset, cache hit rates, and so on.
+  
+  This is an OK list. But like a lot of what we do when we try to create generalised knowledge about software operations, it’s a little vague and unsatisfying. If I’ve got a system of significant complexity and scope and a new engineer, I probably can’t hand them that list and expect them to implement comprehensive monitoring. That engineer doesn’t know the specific system well, it’ll take them a long time to do the work and quite likely some things will be missed.
+  
+  A lot of things in software operations generally, and SRE specifically, are like this. You need a lot of knowledge of a specific system to do things well. [Production Readiness Reviews](https://sre.google/sre-book/evolving-sre-engagement-model/) for new services, or services which are being handed off to an SRE team, are a good example. In some organisations, these are done as a collaboration between the development team who built the service and the SRE team who are onboarding it. In others, a centralised, consulting SRE team works with the developers to assess compliance with a set of production standards.
+  
+  These processes are called the same thing, but they look quite different. Typically, the former kind of PRR will take a quarter or more, because invariably, new large services have a significant amount of tasks to do to get them production-ready. The SRE team onboarding the service will spend significant time finding gaps, understanding what happens when dependencies of the service fail, improving monitoring and runbooks and automation.
+  
+  The second kind of PRR typically does not uncover much to be done, and devolves into a tick-box exercise where the developers attempt to demonstrate compliance with the organisation’s production standards. The consultant SREs don’t know the ins-and-outs of the system in question, and while generic expertise in production systems may spot some issues, significant things will almost certainly be missed. Discussing this problem, a friend of mine with over 25 years of experience said: “I was that person. I reviewed the system and it seemed solid. It was only when I tried to use it and found the bugs I found it was a giant Potemkin village.”
+  
+  Over the winter holidays, I read James C. Scott’s *Seeing Like a State: How Certain Schemes to Improve the Human Condition have Failed* [[1]](https://www.usenix.org/publications/loginonline/seeing-sre-site-reliability-engineering-high-modernism#Reference1). Scott is a political scientist and anthropologist, and his work mainly deals with nation states and how they understand and control their populations. As well as attempting to understand what they govern, states try to simplify things, to make them easier to understand - the term Scott uses is ‘legible’. Scott puts forward a range of examples. Standardizing on an official state language means that it’s easier to run a bureaucracy. Introducing surnames makes it easier to track whether people are paying taxes. Building cities on a grid pattern makes it easier to get around, and easier to put down uprisings. Monocultures in forestry make it easier to know how many trees you can harvest.
+  
+  What we do in software operations has a lot in common with this project Scott describes. We spend a lot of time trying to make our systems legible. We do this by adding logging, monitoring, tracing, status pages and other tooling.
+  
+  We also attempt to standardise and simplify our systems. There is huge power in this. For example, not every system at Google is uniform, but there’s a great deal of uniformity. Almost all software that Google runs is built in-house, generally using one of a small number of common frameworks. RPC mechanisms, readiness and liveness checks, metrics endpoints and status pages (to surface information and controls for human operators) are built in. Essentially everything runs on [Borg](https://research.google/pubs/pub43438/) — all jobs have been assimilated. Standardisation means it’s easier for systems to interoperate, and it’s easier to build infrastructure because you don’t need to support many different ways of doing the same thing. The degree of standardisation means that it’s possible to run a generic class for new Google engineers that gives them the basic skills to investigate almost any job running at Google that they have privileges to access: where it is running, rich statistics about RPCs in and out, logs, traces, and so on.
+  
+  The same project has come to the rest of our industry, it’s just not as far advanced. Kubernetes is standardised orchestration. Services meshes aim to standardise service to service communication and make it more legible and manageable. Immutable infrastructure in general is a way of controlling what we deploy and run, ensuring it’s consistent. Serverless is another form of standardisation and simplification. [Service Level Objectives](https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-slis-slas-and-slos) (SLOs) exist to provide uniform signals about the health of services. All of these are our attempts to constrain and standardise what we build and run, to make it uniform and legible, the software equivalent of Scott’s grid layout for cities.
+  
+  The moment we are seeing now in software operations seems to be a type of high modernism. High modernism is a phenomenon that came about during the Cold War, characterized by a faith in scientific management and development, and a rejection of crafts and traditions. It was a vision of a well-ordered utopia, in the form of high rise living, in planned cities with simple geometries.
+  
+  Like high modernism, software high modernism is experiencing mixed success. Kubernetes is as divisive as ever Le Corbusier’s high rise buildings were. Switching a large organisation’s suite of microservices to a service mesh is almost as messy and disruptive as imposing a grid system on a medieval city (and done for much the same reasons of increasing legibility and hygiene). SLOs are useful, but defining meaningful non-cookie-cutter SLOs is a lot of work.
+  
+  However, the dark side of the current wave of software high modernism is that applying these principles may mean picking up your existing systems and moving them onto a very different infrastructure — which you then need to run. For very small organisations, the added complexity of running Kubernetes or a service mesh may not make sense. For larger organisations, getting to the goal of uniformity means moving a larger set of systems to a new infrastructure — a lengthy migration. This is a significant investment of time, engineering effort, and, most likely, error budgets.
+  
+  Increasing legibility doesn’t always mean migrating your entire infrastructure in a high modernist-style five year plan, though. [Tom Limoncelli’s ‘Low Context Devops’](https://www.usenix.org/conference/srecon20americas/presentation/limoncelli) (also in [*;login:*](https://www.usenix.org/publications/loginonline/low-context-devops)) is a great example of some less disruptive things we can do to increase our systems’ legibility, such as standardising documentation and linking it from error messages and alerts, setting good defaults, providing base libraries that embody recommended practices.
+  
+  Increasing legibility and standardization of our systems is a good thing, as long as it comes at a reasonable cost, but it only gets us so far. Scott distinguishes between two sorts of knowledge: *techne* and *metis*.
+  
+  *Techne* is universal knowledge: things like the boiling point of water, Pythagoras’ theorem, the rule that all [RPCs should have deadlines](https://sre.google/sre-book/addressing-cascading-failures/), or that we should probably alert if no instances of our jobs are running. *Techne* is very useful. We can write books about *techne*, and embed some of it in our tooling and infrastructure, like liveness checks in Kubernetes or deadlines in service meshes.
+  
+  The other kind of knowledge, *metis*, is local, specific, and practical. It’s won from experience. It can’t be codified in the same way that *techne* can. The comparison that Scott gives is between navigation and piloting. Deepwater navigation is a general skill, but a pilot knows a specific port — a ‘local and situated knowledge,’ as Scott puts it, including tides, currents, seasonal changes, shifting sandbars, and wind patterns. A pilot cannot move to another port and expect to have the same level of skill and local knowledge. When I joined a team that ran edge routers and switches, I had some useful *techne* — knowledge of network protocols and routing protocols and so on — but I definitely wasn’t a network engineer. I had to learn an awful lot of *metis* in the form of network debugging techniques, how to roll back to a previous router configuration, what a [small form-factor pluggable transceiver](https://en.wikipedia.org/wiki/QSFP) implied for maintenance (my new colleagues laughed at me for not knowing what those were, the jerks — but they did explain it), how to deal with a DDOS, and so on.
+  
+  Knowledge of a specific software system is *metis*, rather than *techne*. This is why there is a learning curve when we start working on a new system, and why we don’t put our new teammates on call right away. More standardisation in infrastructure, better runbooks and so on are the software equivalent of dredging the shipping channel and putting markers on obstructions — they can somewhat reduce the amount of *metis* we need to have, but not eliminate the need for a local pilot entirely.
+  
+  To return to where I started this article, this is why generic checklists always fall a bit flat, and why it’s very difficult to run a thorough production readiness review for a system that you aren’t deeply familiar with. Both of these are an attempt to substitute *techne* for *metis*, which just doesn’t work.
+  
+  This, perhaps, is the source of some of the antipathy that some old-school sysadmins have for SRE (as exemplified by the reaction to Todd Underwood’s LISA 2013 talk, [PostOps: A Non-Surgical Tale of Software, Fragility, and Reliability](https://www.usenix.org/conference/lisa13/technical-sessions/plenary/underwood)). SRE is seen as a high modernist project, intent on scientifically managing their systems, all *techne* and no *metis*; all SLOs and Kubernetes and no systems knowledge and craft. That view is not entirely wrong. Some in the SRE movement do see it that way — things like consulting SRE teams, SRE software platforms, SLOs, and Kubernetes are popular for a reason, and they do have their uses. But call it what you will – craft, *metis* – specific systems knowledge isn’t going away anytime soon. SRE or sysadmin, *metis* is the one aspect of our jobs that we are unlikely to ever automate away.
+  
+  References:
+  
+  [1] James Scott, *Seeing Like a State*. Veritas, 2012.
+  
+  Last updated February 8, 2023
+  
+  Authors:
+  
+  ![https://www.usenix.org/sites/default/files/styles/author_bio/public/nolan.jpg?itok=8rhJtC_Y](https://www.usenix.org/sites/default/files/styles/author_bio/public/nolan.jpg?itok=8rhJtC_Y)
+  
+  Laura Nolan is an SRE and software engineer by day and a postgraduate student in Ethics at Dublin City University by night. She is a contributor to Site Reliability Engineering: How Google Runs Production Systems and Seeking SRE, published by O’Reilly, and is a member of the USENIX SREcon Steering Committee.
+- [Log in](https://www.usenix.org/user/login?destination=node/273658%23comment-form) or [Register](https://www.usenix.org/user/register?destination=node/273658%23comment-form) to post comments

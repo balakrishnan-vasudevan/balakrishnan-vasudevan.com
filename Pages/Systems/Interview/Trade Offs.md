@@ -1,0 +1,25 @@
+| **Tradeoff**                                        | **When to Choose A**                                       | **When to Choose B**                                                                                 |
+| --------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **1. Strong vs Eventual Consistency**               | Strong: Banking, transactions, critical data integrity.    | Eventual: Social media feeds, product catalogs.                                                      |
+| **2. Latency vs Throughput**                        | Low Latency: Real-time applications (gaming, trading).     | High Throughput: Data analytics, batch processing.                                                   |
+| **3. ACID vs BASE Properties in Databases**         | ACID: Financial, healthcare, enterprise systems.           | BASE: Scalable web apps, big data, NoSQL stores.                                                     |
+| **4. Read-Through vs Write-Through Cache**          | Read-Through: Frequently accessed but rarely updated data. | Write-Through: Ensures consistency, useful for logs.                                                 |
+| **5. Batch vs Stream Processing**                   | Batch: Large-scale analytics, end-of-day reports.          | Stream: Real-time fraud detection, IoT data.                                                         |
+| **6. Load Balancer vs API Gateway**                 | Load Balancer: Distributes traffic, mainly for scaling.    | API Gateway: Manages security, rate limiting, routing.                                               |
+| **7. API Gateway vs Direct Service Exposure**       | API Gateway: Security, authentication, monitoring.         | Direct: Internal services with low complexity.                                                       |
+| **8. Proxy vs Reverse Proxy**                       | Proxy: Hides client identity, used in enterprise security. | Reverse Proxy: Load balancing, caching, SSL termination.                                             |
+| **9. API Gateway vs Reverse Proxy**                 | API Gateway: Authentication, request transformation.       | Reverse Proxy: Load balancing, static content caching.                                               |
+| **10. SQL vs NoSQL**                                | SQL: Structured, transactional, well-defined schema.       | NoSQL: Scalability, unstructured data, high write loads.                                             |
+| **11. Primary-Replica vs Peer-to-Peer Replication** | Primary-Replica: Read-heavy workloads, easier consistency. | Peer-to-Peer: Write-heavy, multi-master applications.                                                |
+| **12. Data Compression vs Data Deduplication**      | Compression: Reduces storage/transmission size.            | Deduplication: Eliminates redundant data, backups.                                                   |
+| **13. Server-Side vs Client-Side Caching**          | Server-Side: Reduces backend load, used for APIs.          | Client-Side: Reduces network latency, browser caching.                                               |
+| **14. REST vs RPC**                                 | REST: Scalable, standardized, for public APIs.             | RPC: Faster, compact, internal microservices.                                                        |
+| **15. Polling vs Long-Polling vs Webhooks**         | Polling: Simple but inefficient, for infrequent updates.   | Long-Polling: Reduces latency, but still polling-based. <br>Webhooks: Best for event-driven updates. |
+| **16. CDN vs Direct Server Serving**                | CDN: Global availability, faster content delivery.         | Direct: Low-traffic, dynamic server-side content.                                                    |
+| **17. Serverless vs Traditional Server**            | Serverless: Auto-scaling, pay-per-use, lightweight tasks.  | Traditional: Predictable workloads, long-running apps.                                               |
+| **18. Stateful vs Stateless Architecture**          | Stateful: Session tracking, chat applications.             | Stateless: Scalability, RESTful APIs, microservices.                                                 |
+| **19. Hybrid vs All-Cloud Storage**                 | Hybrid: Compliance, cost savings, legacy systems.          | All-Cloud: Scalability, reduced infrastructure overhead.                                             |
+| **20. Token Bucket vs Leaky Bucket**                | Token Bucket: Bursty traffic, allows bursts within limits. | Leaky Bucket: Smooths traffic, enforces constant rate.                                               |
+| **21. Read Heavy vs Write Heavy System**            | Read Heavy: Caching, replication, eventual consistency.    | Write Heavy: NoSQL, sharding, high ingestion speed.                                                  |
+
+https://open.substack.com/pub/betterengineers/p/system-design-trade-offs?r=3hbylz&utm_medium=ios

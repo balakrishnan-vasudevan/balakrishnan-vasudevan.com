@@ -1,0 +1,5 @@
+- [First Steps as a DevOps Engineer: Crafting a Modern AWS Stack](https://medium.com/p/98adc60915eb)
+- [How to Create a Production-Ready EKS Cluster on AWS Using Terraform (Part 2: EKS Setup)](https://medium.com/p/4fb3027c49fe)
+- [The Art of System Debugging — Decoding CPU Utilization](https://medium.com/p/da75f09ef1ff)
+- [How We Cut 40% in NAT Gateway Costs](https://medium.com/p/640a9b3f9a48)
+- [AWS — From 1 to 1000s of VPCs, easy peasy!](https://medium.com/p/0f4f8a944787)

@@ -1,0 +1,9 @@
+{
+  "userIgnoreFilters": [
+    "Pages/General/",
+    "Pages/Clippings/",
+    "Pages/ToDos/",
+    "Pages/Systems/Systems Design/"
+  ],
+  "alwaysUpdateLinks": true
+}

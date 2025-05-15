@@ -1,0 +1,13 @@
+# The Good Shepherd
+
+![rw-book-cover](https://images-na.ssl-images-amazon.com/images/I/41vnSfqByHL._SL200_.jpg)
+
+## Metadata
+- Author: [[C. S. Forester]]
+- Full Title: The Good Shepherd
+- Category: #books
+
+## Highlights
+- In that hour after dawn the horizon did not seem far away. The line where the watery sky met the gray sea was not well defined; it was as if the cheerless clouds grew denser out towards that circle until at the final meeting, all the way round, there was not an abrupt transition, but a simple mingling of twin elements. So the area confined under that low sky was not a large one. Beyond the circle, in every direction, the sea extended for a thousand miles, and beneath it the water was two miles deep; neither figure was easily to be grasped by the imagination, although acceptable as an academic fact. Two long miles below lay the sea bottom, darker than the center of the longest and darkest tunnel ever built by man, under pressures greater than any ever built up in factory or laboratory, a world unknown and unexplored, to be visited not by men but perhaps by their dead bodies encased in and made part of the iron coffins of their crushed-in ships. And the big ships, to insignificant man so huge and so solid, sank to that sea bottom, to the immemorial ooze in the darkness and cold, with no more ado or stir than would be caused comparatively by specks of dust falling on a ballroom floor. On the surface the limited area enclosed by the near horizon bore many ships. The long gray rollers from the northeast swept in endless succession across the area, each demonstrating its unlimited power. To each one as it arrived the ships made obeisance, rolling far over, and then heaving up their bows, mounting towards the sky, next rolling far over the other way, bows down, sterns up, slithering down the long slope before beginning the next roll and the next pitch, the next rise and the next fall; there were many ships in many lines and many columns, and by looking at the ships the course and position of each wave could be traced diagonally across line and column—ships here rising on the crest and there sinking in the trough until the mastheads only were visible, ships here rolling far to port and ships there rolling far to starboard, towards each other and away, as long as patience could endure to watch. ([Location 88](https://readwise.io/to_kindle?action=open&asin=B07K7BGZYW&location=88))
+    - Tags: [[blue]] 
+- in war the character and personality of the leader is decisive of events much more than minor questions of material. ([Location 174](https://readwise.io/to_kindle?action=open&asin=B07K7BGZYW&location=174))
